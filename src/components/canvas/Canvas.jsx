@@ -56,7 +56,7 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
         <div className='offcanvas__body'>
           <div className='offcanvas__left'>
             <div className='offcanvas__logo'>
-              <Link href='/digital-agency-dark'>
+              <Link href='/'>
                 <Image
                   priority
                   style={{ width: "auto", height: "auto" }}
@@ -91,10 +91,10 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
             <div className='offcanvas__links'>
               <ul>
                 <li>
-                  <Link href='/about-dark'>About</Link>
+                  <Link href='/about'>About</Link>
                 </li>
                 <li>
-                  <Link href='/contact-dark'>contact</Link>
+                  <Link href='/contact'>contact</Link>
                 </li>
               </ul>
             </div>
@@ -105,27 +105,27 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
                 <ul className='menu-anim title' ref={headerTitle}>
                   <li>
                     <div className='header_title'>
-                      <Link href={"/digital-agency-dark"}>HOME</Link>
+                      <Link href={"/"}>HOME</Link>
                     </div>
                   </li>
                   <li>
                     <div className='header_title'>
-                      <Link href={"/about-dark"}>ABOUT</Link>
+                      <Link href={"/about"}>ABOUT</Link>
                     </div>
                   </li>
                   <li>
                     <div className='header_title d-flex'>
-                      <Link href={"/service-v6-dark"}>SERVICE</Link>
+                      <Link href={"/service"}>SERVICE</Link>
                     </div>
                   </li>
                   <li>
                     <div className='header_title d-flex'>
-                      <Link href={"/portfolio-v4-dark"}>Portfolio</Link>
+                      <Link href={"/portfolio"}>Portfolio</Link>
                     </div>
                   </li>
                   <li>
                     <div className='header_title'>
-                      <Link href={"/contact-dark"}>CONTACT</Link>
+                      <Link href={"/contact"}>CONTACT</Link>
                     </div>
                   </li>
                 </ul>

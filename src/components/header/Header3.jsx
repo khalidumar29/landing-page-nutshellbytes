@@ -45,42 +45,42 @@ export default function Header3() {
   };
   return (
     <>
-      <header className="header__area" ref={headerArea}>
-        <div className="header__inner">
-          <div className="header__logo">
-            <Link href="/digital-marketing">
+      <header className='header__area' ref={headerArea}>
+        <div className='header__inner'>
+          <div className='header__logo'>
+            <Link href='/'>
               <Image
                 priority
                 width={33}
                 height={100}
-                className="logo-primary"
+                className='logo-primary'
                 src={LogoWhite}
-                alt="Site Logo"
+                alt='Site Logo'
               />
               <Image
                 priority
                 width={100}
                 height={33}
-                className="logo-secondary"
+                className='logo-secondary'
                 src={LogoWhite2}
-                alt="Moibile Logo"
+                alt='Moibile Logo'
               />
             </Link>
           </div>
-          <div className="header__nav-icon">
-            <button onClick={openCanvas} id="open_offcanvas">
+          <div className='header__nav-icon'>
+            <button onClick={openCanvas} id='open_offcanvas'>
               <Image
                 priority
                 width={22}
                 height={22}
                 src={MenuWhite}
-                alt="Menubar Icon"
+                alt='Menubar Icon'
               />
             </button>
           </div>
-          <div className="header__support">
+          <div className='header__support'>
             <p>
-              Support center <a href="tel:+9587325902">+9 587 325 902</a>
+              Support center <a href='tel:+9587325902'>+9 587 325 902</a>
             </p>
           </div>
         </div>

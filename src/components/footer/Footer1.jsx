@@ -156,7 +156,7 @@ export default function Footer1() {
               </ul>
             </div>
             <div className='footer__contact-3'>
-              <Link className='end' href='/contact-dark'>
+              <Link className='end' href='/contact'>
                 Let’s talk
               </Link>
             </div>
@@ -180,10 +180,10 @@ export default function Footer1() {
                 <div className='footer__nav-2'>
                   <ul className='footer-menu-2 menu-anim' ref={menuAnim}>
                     <li>
-                      <Link href='/about-dark'>about us</Link>
+                      <Link href='/about'>about us</Link>
                     </li>
                     <li>
-                      <Link href='/contact-dark'>contact</Link>
+                      <Link href='/contact'>contact</Link>
                     </li>
                   </ul>
                 </div>

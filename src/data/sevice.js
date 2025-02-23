@@ -2,9 +2,9 @@ const services = {
   // Basic service list data
   servicesData: [
     {
-      id: "branding-design",
-      slug: "branding-design",
-      title: "Branding",
+      id: "mobile-development",
+      slug: "mobile-development",
+      title: "Mobile Development",
       highlight: "design",
       description:
         "We help brands stand out through thoughtful, elegant visual design. Our design philosophy focuses on creating meaningful experiences.",
