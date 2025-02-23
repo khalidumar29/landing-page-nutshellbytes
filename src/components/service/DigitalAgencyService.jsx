@@ -7,6 +7,7 @@ import Service12 from "../../../public/assets/imgs/service/1/2.png";
 import Service13 from "../../../public/assets/imgs/service/1/3.png";
 import Service14 from "../../../public/assets/imgs/service/1/4.png";
 import Image from "next/image";
+import { getDigitalAgencyData } from "@/data/sevice";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,6 +17,8 @@ const DigitalAgencyService = () => {
   const [activeShape, setActiveShape] = useState(1);
 
   const serviceList = useRef();
+
+  const digitalAgencyData = getDigitalAgencyData();
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -137,7 +140,7 @@ const DigitalAgencyService = () => {
               <div className='service__top-btn'>
                 <div className='btn_wrapper'>
                   <Link
-                    href='/service-v6-dark'
+                    href='/service'
                     className='btn-item wc-btn-secondary btn-hover'
                   >
                     <span></span> View <br />
@@ -152,203 +155,58 @@ const DigitalAgencyService = () => {
             <div className='row'>
               <div className='col-xxl-4 col-xl-4 col-lg-0 col-md-0'>
                 <div className='service__img-wrapper'>
-                  <Image
-                    priority
-                    width={280}
-                    style={{ height: "auto" }}
-                    src={Service11}
-                    alt='Service Image'
-                    className={
-                      activeImg == 1
-                        ? "service__img img-1 active"
-                        : "service__img img-1"
-                    }
-                  />
-                  <Image
-                    priority
-                    width={280}
-                    style={{ height: "auto" }}
-                    src={Service12}
-                    alt='Service Image'
-                    className={
-                      activeImg == 2
-                        ? "service__img img-2 active"
-                        : "service__img img-2"
-                    }
-                  />
-                  <Image
-                    priority
-                    width={280}
-                    style={{ height: "auto" }}
-                    src={Service13}
-                    alt='Service Image'
-                    className={
-                      activeImg == 3
-                        ? "service__img img-3 active"
-                        : "service__img img-3"
-                    }
-                  />
-                  <Image
-                    priority
-                    width={280}
-                    style={{ height: "auto" }}
-                    src={Service14}
-                    alt='Service Image'
-                    className={
-                      activeImg == 4
-                        ? "service__img img-4 active"
-                        : "service__img img-4"
-                    }
-                  />
+                  {digitalAgencyData.map((service, index) => (
+                    <Image
+                      index={index}
+                      priority
+                      width={280}
+                      height={380}
+                      style={{ height: "auto" }}
+                      src={service.image}
+                      alt='Service Image'
+                      className={`service__img img-${service.id} ${
+                        activeImg === service.id ? "active" : ""
+                      }`}
+                    />
+                  ))}
 
-                  <span
-                    className={
-                      activeShape == 1
-                        ? "shapes shape-box-1 current"
-                        : "shapes shape-box-1"
-                    }
-                  ></span>
-                  <span
-                    className={
-                      activeShape == 2
-                        ? "shapes shape-box-2 current"
-                        : "shapes shape-box-2"
-                    }
-                  ></span>
-                  <span
-                    className={
-                      activeShape == 3
-                        ? "shapes shape-box-3 current"
-                        : "shapes shape-box-3"
-                    }
-                  ></span>
-                  <span
-                    className={
-                      activeShape == 4
-                        ? "shapes shape-box-4 current"
-                        : "shapes shape-box-4"
-                    }
-                  ></span>
+                  {digitalAgencyData.map((service) => (
+                    <span
+                      key={service.id}
+                      className={`shapes shape-box-${service.id} ${
+                        activeShape === service.id ? "current" : ""
+                      }`}
+                    ></span>
+                  ))}
                 </div>
               </div>
               <div className='col-xxl-8 col-xl-8 col-lg-12 col-md-12'>
                 <div className='service__list' ref={serviceList}>
-                  <Link
-                    href={{
-                      pathname: "/service/[slug]",
-                      query: { slug: "2" },
-                    }}
-                    className={activeList == 1 ? "active" : ""}
-                    data-service='1'
-                  >
-                    <div className='service__item animation_home1_service'>
-                      <div className='service__number'>
-                        <span>01</span>
+                  {digitalAgencyData.map((service) => (
+                    <Link
+                      key={service.id}
+                      href={`/service/${service.slug}`}
+                      className={activeList == service.id ? "active" : ""}
+                      data-service={service.id}
+                    >
+                      <div className='service__item animation_home1_service'>
+                        <div className='service__number'>
+                          <span>{service.number}</span>
+                        </div>
+                        <div className='service__title-wrapper'>
+                          <h4 className='service__title'>{service.title}</h4>
+                        </div>
+                        <div className='service__text'>
+                          <p>{service.description}</p>
+                        </div>
+                        <div className='service__link'>
+                          <p>
+                            <i className='fa-solid fa-arrow-right'></i>
+                          </p>
+                        </div>
                       </div>
-                      <div className='service__title-wrapper'>
-                        <h4 className='service__title'>
-                          Web & Mobile Development
-                        </h4>
-                      </div>
-                      <div className='service__text'>
-                        <p>
-                          We create, products, brands, apps & websites for the
-                          companies all around the world class digital products
-                        </p>
-                      </div>
-                      <div className='service__link'>
-                        <p>
-                          <i className='fa-solid fa-arrow-right'></i>
-                        </p>
-                      </div>
-                    </div>
-                  </Link>
-
-                  <Link
-                    href='/service-details-dark'
-                    className={activeList == 2 ? "active" : ""}
-                    data-service='2'
-                  >
-                    <div className='service__item  animation_home1_service'>
-                      <div className='service__number'>
-                        <span>02</span>
-                      </div>
-                      <div className='service__title-wrapper'>
-                        <h4 className='service__title'>
-                          Interaction <br />
-                          Design
-                        </h4>
-                      </div>
-                      <div className='service__text'>
-                        <p>
-                          We create, products, brands, apps & websites for the
-                          companies all around the world class digital products
-                        </p>
-                      </div>
-                      <div className='service__link'>
-                        <p>
-                          <i className='fa-solid fa-arrow-right'></i>
-                        </p>
-                      </div>
-                    </div>
-                  </Link>
-
-                  <Link
-                    href='/service-details-dark'
-                    className={activeList == 3 ? "active" : ""}
-                    data-service='3'
-                  >
-                    <div className='service__item  animation_home1_service'>
-                      <div className='service__number'>
-                        <span>03</span>
-                      </div>
-                      <div className='service__title-wrapper'>
-                        <h4 className='service__title'>
-                          Digital <br />
-                          Maketing
-                        </h4>
-                      </div>
-                      <div className='service__text'>
-                        <p>
-                          We create, products, brands, apps & websites for the
-                          companies all around the world class digital products
-                        </p>
-                      </div>
-                      <div className='service__link'>
-                        <p>
-                          <i className='fa-solid fa-arrow-right'></i>
-                        </p>
-                      </div>
-                    </div>
-                  </Link>
-
-                  <Link
-                    href='/service-details-dark'
-                    className={activeList == 4 ? "active" : ""}
-                    data-service='4'
-                  >
-                    <div className='service__item  animation_home1_service'>
-                      <div className='service__number'>
-                        <span>04</span>
-                      </div>
-                      <div className='service__title-wrapper'>
-                        <h4 className='service__title'>
-                          Branding and Strategy
-                        </h4>
-                      </div>
-                      <div className='service__text'>
-                        <p>
-                          We create, products, brands, apps & websites for the
-                          companies all around the world class digital products
-                        </p>
-                      </div>
-                      <div className='service__link'>
-                        <p>
-                          <i className='fa-solid fa-arrow-right'></i>
-                        </p>
-                      </div>
-                    </div>
-                  </Link>
+                    </Link>
+                  ))}
                 </div>
               </div>
             </div>

@@ -2,10 +2,12 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger, ScrollSmoother } from "@/plugins";
 import Link from "next/link";
+import { creativeAgencyServices, getServicesData } from "@/data/sevice";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-const CreativeAgencyService = () => {
+const CreativeAgencyService = ({ services }) => {
+  const servicesData = getServicesData();
   useEffect(() => {
     if (typeof window !== "undefined") {
       let device_width = window.innerWidth;
@@ -64,102 +66,21 @@ const CreativeAgencyService = () => {
           <div className='row'>
             <div className='col-xxl-12'>
               <div className='service__items-7 animation_service_7'>
-                <div className='service__item-7'>
-                  <Link href='/service-details-dark'>
-                    <h3 className='service__title-7'>
-                      Branding <span>design</span>
-                    </h3>
-                  </Link>
-                  <p>
-                    We help brands stand out through aweful, elegant visual
-                    design. Our design mainly philosophy.
-                  </p>
-                  <ul>
-                    <li>+ Logo Design</li>
-                    <li>+ Advertisement</li>
-                    <li>+ Promotion</li>
-                  </ul>
-                </div>
-                <div className='service__item-7'>
-                  <Link href='/service-details-dark'>
-                    <h3 className='service__title-7'>
-                      Interactive <span>Design</span>{" "}
-                    </h3>
-                  </Link>
-                  <p>
-                    We help brands stand out through aweful, elegant visual
-                    design. Our design mainly philosophy.
-                  </p>
-                  <ul>
-                    <li>+ Logo Design</li>
-                    <li>+ Advertisement</li>
-                    <li>+ Promotion</li>
-                  </ul>
-                </div>
-                <div className='service__item-7'>
-                  <Link href='/service-details-dark'>
-                    <h3 className='service__title-7'>
-                      Web & Mobile <span>Development</span>{" "}
-                    </h3>
-                  </Link>
-                  <p>
-                    We help brands stand out through aweful, elegant visual
-                    design. Our design mainly philosophy.
-                  </p>
-                  <ul>
-                    <li>+ Logo Design</li>
-                    <li>+ Advertisement</li>
-                    <li>+ Promotion</li>
-                  </ul>
-                </div>
-                <div className='service__item-7'>
-                  <Link href='/service-details-dark'>
-                    <h3 className='service__title-7'>
-                      Digital <span> Marketing</span>{" "}
-                    </h3>
-                  </Link>
-                  <p>
-                    We help brands stand out through aweful, elegant visual
-                    design. Our design mainly philosophy.
-                  </p>
-                  <ul>
-                    <li>+ Logo Design</li>
-                    <li>+ Advertisement</li>
-                    <li>+ Promotion</li>
-                  </ul>
-                </div>
-                <div className='service__item-7'>
-                  <Link href='/service-details-dark'>
-                    <h3 className='service__title-7'>
-                      Business <span>Strategy</span>
-                    </h3>
-                  </Link>
-                  <p>
-                    We help brands stand out through aweful, elegant visual
-                    design. Our design mainly philosophy.
-                  </p>
-                  <ul>
-                    <li>+ Logo Design</li>
-                    <li>+ Advertisement</li>
-                    <li>+ Promotion</li>
-                  </ul>
-                </div>
-                <div className='service__item-7'>
-                  <Link href='/service-details-dark'>
-                    <h3 className='service__title-7'>
-                      Illustration <span>Modelling</span>{" "}
-                    </h3>
-                  </Link>
-                  <p>
-                    We help brands stand out through aweful, elegant visual
-                    design. Our design mainly philosophy.
-                  </p>
-                  <ul>
-                    <li>+ Logo Design</li>
-                    <li>+ Advertisement</li>
-                    <li>+ Promotion</li>
-                  </ul>
-                </div>
+                {servicesData.map((service) => (
+                  <div className='service__item-7' key={service.id}>
+                    <Link href={`/service/${service.id}`}>
+                      <h3 className='service__title-7'>
+                        {service.title} <span>{service.highlight}</span>{" "}
+                      </h3>
+                    </Link>
+                    <p>{service.description}</p>
+                    <ul>
+                      {service.features.map((feature, index) => (
+                        <li key={index}>+ {feature}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
