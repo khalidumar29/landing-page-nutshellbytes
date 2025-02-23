@@ -26,6 +26,37 @@ export async function getStaticPaths() {
   };
 }
 
+export const getPortfolioNavigation = (currentSlug) => {
+  // Get all slugs from both sources
+  const allSlugs = [
+    ...Object.keys(portfolioDetails),
+    ...portfolioSlides.map((slide) => slide.slug),
+  ];
+
+  const currentIndex = allSlugs.indexOf(currentSlug);
+
+  if (currentIndex === -1) return null;
+
+  return {
+    prev: {
+      link: `/portfolio/${
+        currentIndex > 0
+          ? allSlugs[currentIndex - 1]
+          : allSlugs[allSlugs.length - 1]
+      }`,
+      text: "Previous Project",
+    },
+    next: {
+      link: `/portfolio/${
+        currentIndex < allSlugs.length - 1
+          ? allSlugs[currentIndex + 1]
+          : allSlugs[0]
+      }`,
+      text: "Next Project",
+    },
+  };
+};
+
 export async function getStaticProps({ params }) {
   // Try to get data from portfolioDetails first
   const detailData = portfolioDetails[params.portfolio];
@@ -41,13 +72,15 @@ export async function getStaticProps({ params }) {
       notFound: true,
     };
   }
-
+  const navigation = getPortfolioNavigation(params.portfolio);
   return {
     props: {
       portfolioData: detailData || slideData,
+      navigation,
     },
   };
 }
+
 const PortfolioDetailsDark = ({ portfolioData }) => {
   const router = useRouter();
 

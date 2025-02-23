@@ -112,12 +112,12 @@ export const portfolioDetails = {
     },
     navigation: {
       prev: {
-        link: "/portfolio-details",
-        text: "Prev Work",
+        link: "/portfolio/test-websiteg",
+        text: "Previous Project",
       },
       next: {
-        link: "/portfolio-details",
-        text: "Next Work",
+        link: "/portfolio/benjon-website",
+        text: "Next Project",
       },
     },
   },
@@ -194,12 +194,12 @@ export const portfolioDetails = {
     },
     navigation: {
       prev: {
-        link: "/portfolio-details",
-        text: "Prev Work",
+        link: "/portfolio/benjon-website",
+        text: "Previous Project",
       },
       next: {
-        link: "/portfolio-details",
-        text: "Next Work",
+        link: "/portfolio/test-website",
+        text: "Next Project",
       },
     },
   },

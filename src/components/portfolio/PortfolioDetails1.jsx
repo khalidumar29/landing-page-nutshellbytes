@@ -154,20 +154,22 @@ const PortfolioDetails1 = ({ data }) => {
 
             <div className='row'>
               <div className='col-xxl-12 col-xl-12 col-lg-12 col-md-12'>
-                <div className='portfolio__detail-btns pt-150 pb-150'>
-                  <Link
-                    href={data.navigation.prev.link}
-                    className='wc-btn-primary btn-hover'
-                  >
-                    <span></span> {data.navigation.prev.text}
-                  </Link>
-                  <Link
-                    href={data.navigation.next.link}
-                    className='wc-btn-primary btn-hover'
-                  >
-                    <span></span> {data.navigation.next.text}
-                  </Link>
-                </div>
+                {data.navigation && (
+                  <div className='portfolio__detail-btns pt-150 pb-150'>
+                    <Link
+                      href={data.navigation.prev.link}
+                      className='wc-btn-primary btn-hover'
+                    >
+                      <span></span> {data.navigation.prev.text}
+                    </Link>
+                    <Link
+                      href={data.navigation.next.link}
+                      className='wc-btn-primary btn-hover'
+                    >
+                      <span></span> {data.navigation.next.text}
+                    </Link>
+                  </div>
+                )}
               </div>
             </div>
           </div>
