@@ -2,32 +2,32 @@
   "nav": [
     {
       "nav_name": "Home",
-      "link": "/digital-agency-dark",
+      "link": "/",
       "type": "",
       "full_width": false,
       "sub_nav": []
     },
     {
       "nav_name": "About",
-      "link": "/about-dark",
+      "link": "/about",
       "type": "",
       "sub_nav": []
     },
     {
       "nav_name": "Services",
-      "link": "/service-v6-dark",
+      "link": "/service",
       "type": "",
       "sub_nav": []
     },
     {
       "nav_name": "Portfolio",
-      "link": "/portfolio-v4-dark",
+      "link": "/portfolio",
       "type": "",
       "sub_nav": []
     },
     {
       "nav_name": "Contact",
-      "link": "/contact-dark",
+      "link": "/contact",
       "type": "",
       "sub_nav": []
     }
