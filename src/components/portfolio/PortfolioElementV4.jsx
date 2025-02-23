@@ -1,9 +1,5 @@
 import { Navigation, Pagination, Autoplay, EffectFade } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Portfilio31 from "../../../public/assets/imgs/portfolio/3/1.jpg";
-import Portfilio32 from "../../../public/assets/imgs/portfolio/3/2.jpg";
-import Portfilio33 from "../../../public/assets/imgs/portfolio/3/3.jpg";
-import Portfilio34 from "../../../public/assets/imgs/portfolio/3/4.jpg";
 import Image from "next/image";
 
 // Import Swiper styles
@@ -17,6 +13,7 @@ import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 import animationCharCome from "@/lib/utils/animationCharCome";
+import { portfolioSlides } from "@/data/portfolio";
 
 const PortfolioElementV4 = () => {
   const charAnim = useRef();
@@ -46,17 +43,6 @@ const PortfolioElementV4 = () => {
             </div>
           </div>
           <div className='row'>
-            <div className='col-xxl-12'>
-              <div className='sec-title-wrapper'>
-                <h2 className='sec-sub-title title-anim'>
-                  Featured <br />
-                  Work
-                </h2>
-              </div>
-            </div>
-          </div>
-
-          <div className='row'>
             <div className='col-xxl-12 portfolio__slider-3'>
               <Swiper
                 modules={[Navigation, Pagination, Autoplay, EffectFade]}
@@ -74,80 +60,35 @@ const PortfolioElementV4 = () => {
                 pagination={{ el: ".swiper-pagination", type: "fraction" }}
               >
                 <div className='swiper-wrapper'>
-                  <SwiperSlide>
-                    <div className='portfolio__slide-3'>
-                      <Link href='/portfolio-details-dark'>
-                        <h3 className='portfolio__title-3'>
-                          Benjon <span>Website</span> 2012
-                        </h3>
-                        <Image
-                          priority
-                          width={550}
-                          style={{ height: "auto" }}
-                          src={Portfilio32}
-                          alt='Portfolio Image'
-                        />
-                      </Link>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className='portfolio__slide-3'>
-                      <Link href='/portfolio-details-dark'>
-                        <h3 className='portfolio__title-3'>
-                          Benjon <span>Website</span> 2012
-                        </h3>
-                        <Image
-                          priority
-                          width={550}
-                          style={{ height: "auto" }}
-                          src={Portfilio31}
-                          alt='Portfolio Image'
-                        />
-                      </Link>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className='portfolio__slide-3'>
-                      <Link href='/portfolio-details-dark'>
-                        <h3 className='portfolio__title-3'>
-                          Benjon <span>Website</span> 2012
-                        </h3>
-                        <Image
-                          priority
-                          width={550}
-                          style={{ height: "auto" }}
-                          src={Portfilio33}
-                          alt='Portfolio Image'
-                        />
-                      </Link>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className='portfolio__slide-3'>
-                      <Link href='/portfolio-details-dark'>
-                        <h3 className='portfolio__title-3'>
-                          Benjon <span>Website</span> 2012
-                        </h3>
-                        <Image
-                          priority
-                          width={550}
-                          style={{ height: "auto" }}
-                          src={Portfilio34}
-                          alt='Portfolio Image'
-                        />
-                      </Link>
-                    </div>
-                  </SwiperSlide>
+                  {portfolioSlides.map((slide) => (
+                    <SwiperSlide key={slide.id}>
+                      <div className='portfolio__slide-3'>
+                        <Link href={`/portfolio/${slide.slug}`}>
+                          <h3 className='portfolio__title-3'>
+                            {slide.title} <span>{slide.type}</span> {slide.year}
+                          </h3>
+                          <Image
+                            priority
+                            width={550}
+                            height={550}
+                            style={{ height: "auto" }}
+                            src={slide.image}
+                            alt={`${slide.title} ${slide.type}`}
+                          />
+                        </Link>
+                      </div>
+                    </SwiperSlide>
+                  ))}
                 </div>
 
                 <div className='swiper-pagination'></div>
 
                 <div className='swiper-btn'>
                   <div style={{ cursor: "pointer" }} className='pp-prev'>
-                    <FontAwesomeIcon icon={faArrowLeft}></FontAwesomeIcon>
+                    <FontAwesomeIcon icon={faArrowLeft} />
                   </div>
                   <div style={{ cursor: "pointer" }} className='pp-next'>
-                    <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
+                    <FontAwesomeIcon icon={faArrowRight} />
                   </div>
                 </div>
               </Swiper>

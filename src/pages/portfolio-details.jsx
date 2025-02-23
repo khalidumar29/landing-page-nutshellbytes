@@ -7,11 +7,11 @@ const PortfolioDetailsDark = () => {
     <>
       <Head>
         <title>Portfolio Details Dark</title>
-        <meta name="description" content="Portfolio Details Dark Description" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name='description' content='Portfolio Details Dark Description' />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>
       <main>
-        <RootLayout header="header3" footer="footer3" defaultMode="dark">
+        <RootLayout header='header3' footer='footer3' defaultMode='dark'>
           <PortfolioDetails1 />
         </RootLayout>
       </main>

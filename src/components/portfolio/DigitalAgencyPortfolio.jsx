@@ -7,6 +7,7 @@ import Portfilio12 from "../../../public/assets/imgs/portfolio/1/2.jpg";
 import Portfilio13 from "../../../public/assets/imgs/portfolio/1/3.jpg";
 import Portfilio14 from "../../../public/assets/imgs/portfolio/1/4.jpg";
 import Image from "next/image";
+import { portfolioSlides } from "@/data/portfolio";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -79,91 +80,24 @@ const DigitalAgencyPortfolio = () => {
           <div className='row top_row'>
             <h2 className='portfolio__text'>work</h2>
             <div className='portfolio__list-1'>
-              <div className='portfolio__item'>
-                <Link href='portfolio-details-dark'>
-                  <Image
-                    priority
-                    style={{ width: "100%", height: "auto" }}
-                    className='mover'
-                    src={Portfilio11}
-                    alt='Portfolio Image'
-                  />
-                </Link>
-                <div className='portfolio__info'>
-                  <h3 className='portfolio__title'>Arteck Lyon Conseil</h3>
-                  <p>02 May 2021</p>
+              {portfolioSlides.map((item) => (
+                <div key={item.id} className='portfolio__item'>
+                  <Link href={`/portfolio/${item.slug}`}>
+                    <Image
+                      priority
+                      style={{ width: "100%", height: "auto" }}
+                      src={item.image}
+                      alt={item.title}
+                      width={635}
+                      height={415}
+                    />
+                  </Link>
+                  <div className='portfolio__info'>
+                    <h3 className='portfolio__title'>{item.title}</h3>
+                    <p>{item.year}</p>
+                  </div>
                 </div>
-              </div>
-              <div className='portfolio__item'>
-                <Link href='/portfolio-details-dark'>
-                  <Image
-                    priority
-                    style={{ width: "100%", height: "auto" }}
-                    src={Portfilio12}
-                    alt='Portfolio Image'
-                  />
-                </Link>
-                <div className='portfolio__info'>
-                  <h3 className='portfolio__title'>Arteck Lyon Conseil</h3>
-                  <p>02 May 2021</p>
-                </div>
-              </div>
-              <div className='portfolio__item'>
-                <Link href='/portfolio-details-dark'>
-                  <Image
-                    priority
-                    style={{ width: "100%", height: "auto" }}
-                    src={Portfilio13}
-                    alt='Portfolio Image'
-                  />
-                </Link>
-                <div className='portfolio__info'>
-                  <h3 className='portfolio__title'>Arteck Lyon Conseil</h3>
-                  <p>02 May 2021</p>
-                </div>
-              </div>
-              <div className='portfolio__item'>
-                <Link href='/portfolio-details-dark'>
-                  <Image
-                    priority
-                    style={{ width: "100%", height: "auto" }}
-                    src={Portfilio14}
-                    alt='Portfolio Image'
-                  />
-                </Link>
-                <div className='portfolio__info'>
-                  <h3 className='portfolio__title'>Arteck Lyon Conseil</h3>
-                  <p>02 May 2021</p>
-                </div>
-              </div>
-              <div className='portfolio__item'>
-                <Link href='/portfolio-details-dark'>
-                  <Image
-                    priority
-                    style={{ width: "100%", height: "auto" }}
-                    src={Portfilio11}
-                    alt='Portfolio Image'
-                  />
-                </Link>
-                <div className='portfolio__info'>
-                  <h3 className='portfolio__title'>Arteck Lyon Conseil</h3>
-                  <p>02 May 2021</p>
-                </div>
-              </div>
-              <div className='portfolio__item'>
-                <Link href='/portfolio-details-dark'>
-                  <Image
-                    priority
-                    style={{ width: "100%", height: "auto" }}
-                    src={Portfilio12}
-                    alt='Portfolio Image'
-                  />
-                </Link>
-                <div className='portfolio__info'>
-                  <h3 className='portfolio__title'>Arteck Lyon Conseil</h3>
-                  <p>02 May 2021</p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
 
@@ -176,7 +110,7 @@ const DigitalAgencyPortfolio = () => {
               >
                 <Link
                   className='wc-btn-secondary btn-hover btn-item'
-                  href='/portfolio-v4-dark'
+                  href='/portfolio'
                 >
                   <span></span>View <br />
                   all projects <i className='fa-solid fa-arrow-right'></i>
