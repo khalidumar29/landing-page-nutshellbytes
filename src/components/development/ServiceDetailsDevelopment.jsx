@@ -10,16 +10,7 @@ const ServiceDetailsDevelopment = ({ data }) => {
 
   if (!data) return null;
 
-  const {
-    title,
-    subtitle,
-    description,
-    features,
-    images = {
-      main: "/assets/imgs/thumb/dev-1.jpg",
-      secondary: "/assets/imgs/thumb/dev-2.jpg",
-    },
-  } = data;
+  const { title, subtitle, description, description2, features, images } = data;
 
   return (
     <>
@@ -39,6 +30,7 @@ const ServiceDetailsDevelopment = ({ data }) => {
               <div className='development__wrapper'>
                 <div className='development__content'>
                   <p>{description}</p>
+                  <p>{description2}</p>
                 </div>
                 {features && features.length > 0 && (
                   <ul>

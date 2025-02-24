@@ -1,4 +1,6 @@
-const ServiceDetailsWorkflow = () => {
+const ServiceDetailsWorkflow = ({ data }) => {
+  const workflowSteps = data?.steps || [];
+
   return (
     <>
       <section className='workflow__area-6'>
@@ -6,57 +8,32 @@ const ServiceDetailsWorkflow = () => {
           <div className='line-3'></div>
           <div className='workflow__wrapper-6'>
             <div className='row'>
+              {/* First column shows workflow title and description */}
               <div className='col-xxl-3 col-xl-3 col-lg-3 col-md-3'>
                 <div className='workflow__slide-6'>
                   <h6 className='workflow__title-6'>
-                    Planning and <br />
-                    sketching
+                    {data?.title?.split(" ").slice(0, 2).join(" ")} <br />
+                    {data?.title?.split(" ").slice(2).join(" ")}
                   </h6>
-                  <p>
-                    Modern and unique design practically point of view, it risks
-                    not meeting the huge expectations
-                  </p>
+                  <p>{data?.description}</p>
                 </div>
               </div>
 
-              <div className='col-xxl-3 col-xl-3 col-lg-3 col-md-3'>
-                <div className='workflow__slide-6'>
-                  <h6 className='workflow__title-6'>
-                    Team <br />
-                    working
-                  </h6>
-                  <p>
-                    Modern and unique design practically point of view, it risks
-                    not meeting the huge expectations
-                  </p>
+              {/* Map through workflow steps */}
+              {workflowSteps.slice(0, 3).map((step, index) => (
+                <div
+                  key={index}
+                  className='col-xxl-3 col-xl-3 col-lg-3 col-md-3'
+                >
+                  <div className='workflow__slide-6'>
+                    <h6 className='workflow__title-6'>
+                      {step.title?.split(" ").slice(0, 2).join(" ")} <br />
+                      {step.title?.split(" ").slice(2).join(" ")}
+                    </h6>
+                    <p>{step.description}</p>
+                  </div>
                 </div>
-              </div>
-
-              <div className='col-xxl-3 col-xl-3 col-lg-3 col-md-3'>
-                <div className='workflow__slide-6'>
-                  <h6 className='workflow__title-6'>
-                    Flowchart and <br />
-                    wireframe
-                  </h6>
-                  <p>
-                    Modern and unique design practically point of view, it risks
-                    not meeting the huge expectations
-                  </p>
-                </div>
-              </div>
-
-              <div className='col-xxl-3 col-xl-3 col-lg-3 col-md-3'>
-                <div className='workflow__slide-6'>
-                  <h6 className='workflow__title-6'>
-                    User experience <br />
-                    Testing
-                  </h6>
-                  <p>
-                    Modern and unique design practically point of view, it risks
-                    not meeting the huge expectations
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
