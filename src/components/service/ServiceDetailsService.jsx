@@ -36,9 +36,7 @@ const ServiceDetailsService = ({ data }) => {
                   width={960}
                   height={640}
                   style={{ height: "auto" }}
-                  src={
-                    data.images?.main || "/assets/imgs/thumb/service-detail.png"
-                  }
+                  src={data.image || ""}
                   alt={`${data.title} detail`}
                 />
                 <Image
@@ -59,6 +57,7 @@ const ServiceDetailsService = ({ data }) => {
                 ) : (
                   <p>{data.description}</p>
                 )}
+                <p>{data.description2}</p>
               </div>
             </div>
           </div>

@@ -25,7 +25,7 @@ const ServiceDetailsFaq = ({ data }) => {
             <div className='col-xxl-6 col-xl-6 col-lg-6 col-md-6'>
               <div className='faq__content'>
                 <h2 className='faq__title title-anim'>
-                  {data.title || "Product making for friendly users"}
+                  {data.title || "Frequently Asked Questions"}
                 </h2>
 
                 <div className='faq__list'>
