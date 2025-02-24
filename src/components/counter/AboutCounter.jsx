@@ -62,44 +62,44 @@ const AboutCounter = () => {
   }, []);
   return (
     <>
-      <section className="counter__area">
-        <div className="container g-0 line pb-140 pt-140">
-          <span className="line-3"></span>
+      <section className='counter__area'>
+        <div className='container g-0 line pb-140 pt-140'>
+          <span className='line-3'></span>
 
-          <div className="row">
-            <div className="col-xxl-12">
-              <div className="counter__wrapper-2 counter_animation">
-                <div className="counter__item-2 counter__anim">
-                  <h2 className="counter__number count1">25k</h2>
+          <div className='row'>
+            <div className='col-xxl-12'>
+              <div className='counter__wrapper-2 counter_animation'>
+                <div className='counter__item-2 counter__anim'>
+                  <h2 className='counter__number count1'>22</h2>
                   <p>
                     Project <br />
                     completed
                   </p>
-                  <span className="counter__border"></span>
+                  <span className='counter__border'></span>
                 </div>
-                <div className="counter__item-2 counter__anim">
-                  <h2 className="counter__number count2">8k</h2>
+                <div className='counter__item-2 counter__anim'>
+                  <h2 className='counter__number count2'>14+</h2>
                   <p>
                     Happy <br />
                     customers
                   </p>
-                  <span className="counter__border"></span>
+                  <span className='counter__border'></span>
                 </div>
-                <div className="counter__item-2 counter__anim">
-                  <h2 className="counter__number count3">15</h2>
+                <div className='counter__item-2 counter__anim'>
+                  <h2 className='counter__number count3'>2+</h2>
                   <p>
                     Years <br />
                     experiences
                   </p>
-                  <span className="counter__border"></span>
+                  <span className='counter__border'></span>
                 </div>
-                <div className="counter__item-2 counter__anim">
-                  <h2 className="counter__number count4">98</h2>
+                <div className='counter__item-2 counter__anim'>
+                  <h2 className='counter__number count4'>5</h2>
                   <p>
                     Awards <br />
                     achievement
                   </p>
-                  <span className="counter__border"></span>
+                  <span className='counter__border'></span>
                 </div>
               </div>
             </div>
