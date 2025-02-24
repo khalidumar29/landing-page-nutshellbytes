@@ -3,8 +3,6 @@ import { gsap } from "gsap";
 import { ScrollTrigger, ScrollSmoother } from "@/plugins";
 import Link from "next/link";
 import Image from "next/image";
-import About11 from "../../../public/assets/imgs/about/1/1.jpg";
-import About12 from "../../../public/assets/imgs/about/1/2.jpg";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -42,8 +40,10 @@ const DigitalAgencyAbout = () => {
                   <div className='img-anim about__img_left'>
                     <Image
                       priority
+                      width={440}
+                      height={550}
                       style={{ width: "auto", height: "auto" }}
-                      src={About11}
+                      src='/home/home1.jpg'
                       alt='About Image'
                       data-speed='0.3'
                     />
@@ -53,8 +53,9 @@ const DigitalAgencyAbout = () => {
                     <Image
                       priority
                       width={220}
+                      height={250}
                       style={{ height: "auto" }}
-                      src={About12}
+                      src='/home/home2.jpg'
                       alt='About Image Right'
                       data-speed='0.5'
                     />
