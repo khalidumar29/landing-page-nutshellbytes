@@ -4,7 +4,7 @@ const services = {
     {
       id: "bespoke-website-design",
       slug: "bespoke-website-design",
-      title: "Bespoke Website Design",
+      title: "Website Design",
       highlight: "Tailored Solutions",
       description:
         "Custom-built websites that align with your brand identity and business goals. We craft digital experiences that captivate and convert.",
@@ -99,8 +99,8 @@ const services = {
     {
       id: "interactive-prototyping",
       slug: "interactive-prototyping",
-      title: "Interactive Prototyping",
-      highlight: "Bringing Ideas to Life",
+      title: "Interactive Prototyping Framework",
+      highlight: "Transforming - Ideas Success",
       description:
         "Building realistic prototypes that allow users to interact with the product before development begins.",
       features: [
@@ -115,8 +115,8 @@ const services = {
     {
       id: "iterative-usability-testing",
       slug: "iterative-usability-testing",
-      title: "Iterative Usability Testing",
-      highlight: "Refining User Experience",
+      title: "Iterative - Usability Testing",
+      highlight: "Refining Experience",
       description:
         "A structured testing process to enhance usability, improve accessibility, and maximize engagement.",
       features: [
