@@ -34,6 +34,7 @@ const DigitalAgencyAbout = () => {
               <div className='about__title-wrapper'>
                 <h3 className='sec-title title-anim'>
                   We unlock the potential of your business with creative design
+                  & solutions
                 </h3>
               </div>
 
@@ -67,12 +68,14 @@ const DigitalAgencyAbout = () => {
 
                 <div className='about__content text-anim'>
                   <p>
-                    From traditional PR and thought leadership campaigns to
-                    storytelling and creative social media management we’ve got
-                    you covered. Something is not your average order-taking
-                    vendor. We are proud to be the go-to partner for some of the
-                    world’s biggest agencies and brands because they trust our
-                    expertise
+                    From cutting-edge software development and strategic digital
+                    marketing to creative storytelling and social media
+                    management, NutshellByte has you covered. We’re not just
+                    another service provider—we’re your trusted technology and
+                    marketing partner. Whether it’s building high-performing web
+                    platforms, driving results through data-driven advertising,
+                    or crafting compelling brand narratives, we deliver
+                    solutions that make an impact.
                   </p>
 
                   <div className='cursor-btn btn_wrapper'>

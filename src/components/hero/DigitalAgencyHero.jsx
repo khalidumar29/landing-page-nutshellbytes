@@ -65,12 +65,12 @@ const DigitalAgencyHero = () => {
                 </Link>
                 <div className='hero__title-wrapper'>
                   <h1 className='hero__title' ref={heroTitle}>
-                    Digital agency studio
+                    One Byte at a Time.
                   </h1>
                   <p className='hero__sub-title' ref={heroSubTitle}>
                     With every single one of our clients, we bring forth deep
                     passion for
-                    <span>creative problem solving</span>
+                    <span> creative problem solving </span>
                     which is what we deliver.
                   </p>
                 </div>

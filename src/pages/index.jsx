@@ -11,7 +11,6 @@ import DigitalAgencyWorkflow from "@/components/workflow/DigitalAgencyWorkflow";
 import DigitalAgencyPortfolio from "@/components/portfolio/DigitalAgencyPortfolio";
 import DigitalAgencyBrand from "@/components/brand/DigitalAgencyBrand";
 import DigitalAgencyTestimonial from "@/components/testimonial/DigitalAgencyTestimonial";
-import DigitalAgencyBlog from "@/components/blog/DigitalAgencyBlog";
 import DigitalAgencyCTA from "@/components/cta/DigitalAgencyCTA";
 
 const DigitalAgency = () => {
@@ -77,7 +76,7 @@ const DigitalAgency = () => {
   return (
     <div>
       <Head>
-        <title>Digital Agency</title>
+        <title>Nutshell Bytes</title>
         <meta name='description' content='Digital Agency Description' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>

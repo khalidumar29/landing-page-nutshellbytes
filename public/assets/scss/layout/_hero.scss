@@ -2,7 +2,6 @@
 /*  14. HERO CSS START
 /*----------------------------------------*/
 
-
 .hero {
   &__area {
     background-color: var(--black);
@@ -28,7 +27,7 @@
       height: auto;
       animation: wcRotate 18s infinite linear;
     }
-    // update v0.2 
+    // update v0.2
     &-2 {
       background-image: url(/assets/imgs/bg/lines.png);
       background-repeat: no-repeat;
@@ -122,7 +121,7 @@
           @media #{$sm} {
             flex-direction: column;
           }
-          // update v0.2 
+          // update v0.2
           .bg-shape {
             background-image: url(/assets/imgs/shape/10.png);
             background-repeat: no-repeat;
@@ -160,7 +159,7 @@
         padding-top: 130px;
         padding-bottom: 0;
       }
-      // update v0.2 
+      // update v0.2
       &::before {
         position: absolute;
         content: "";
@@ -173,7 +172,7 @@
         background-position: left;
         z-index: -1;
       }
-      // update v0.2 
+      // update v0.2
       &::after {
         position: absolute;
         content: "";
@@ -281,12 +280,11 @@
         right: 0;
       }
 
-
       .wrapper {
         --clip-path: circle(65px at left);
         --clip-path-hover: circle(70px at left);
         --clip-path-clicked: circle(100vw at left);
-        --duration: .4s;
+        --duration: 0.4s;
         --timing-function: ease;
         display: flex;
         justify-content: center;
@@ -337,7 +335,7 @@
         top: 55px;
         left: 100px;
 
-        // update v0.2 
+        // update v0.2
         &::before {
           position: absolute;
           top: -20px;
@@ -402,11 +400,11 @@
         }
 
         &:hover {
-          ~.video {
+          ~ .video {
             clip-path: var(--clip-path-hover);
           }
 
-          ~.text {
+          ~ .text {
             &::before {
               --r: 25px;
               --opacity: 1;
@@ -416,7 +414,7 @@
               clip-path: var(--clip-path-hover);
             }
 
-            >span {
+            > span {
               &::after {
                 clip-path: var(--clip-path-hover);
               }
@@ -432,19 +430,19 @@
           left: 0;
           bottom: 0;
 
-          ~.video {
+          ~ .video {
             clip-path: var(--clip-path-clicked);
           }
 
-          ~.text {
+          ~ .text {
             --opacity: 0;
-            transition: opacity .3s var(--timing-function);
+            transition: opacity 0.3s var(--timing-function);
 
             &::after {
               clip-path: var(--clip-path-clicked);
             }
 
-            >span {
+            > span {
               &::after {
                 clip-path: var(--clip-path-clicked);
               }
@@ -454,7 +452,6 @@
       }
 
       &.start-video {
-
         .hero3-img {
           opacity: 0;
         }
@@ -595,7 +592,7 @@
   }
 
   &__text {
-    // update v0.2 
+    // update v0.2
     &-2 {
       background-image: url(/assets/imgs/icon/7.png);
       background-repeat: no-repeat;
@@ -765,7 +762,6 @@
     }
 
     img {
-
       // animation: wcSlideBottom 3s infinite;
       @media #{$xl} {
         max-width: 120px;
@@ -837,8 +833,8 @@
 
     &::after {
       position: absolute;
-      content: "Pro";
-      width: 70px;
+      content: "Master";
+      width: 100px;
       height: 45px;
       right: -80px;
       top: 70px;
@@ -860,7 +856,7 @@
         right: 60px;
         top: 35px;
       }
-      // update v0.2 
+      // update v0.2
       @media #{$md} {
         right: 0;
         top: -25px;
@@ -932,7 +928,7 @@
   }
 
   // About Hero
-  // update v0.2 
+  // update v0.2
   &__about {
     background-image: url(/assets/imgs/about/about-bg.png);
     background-repeat: no-repeat;
@@ -1088,7 +1084,7 @@
       }
 
       @media #{$sm} {
-        margin-right: calc(-.5 * var(--bs-gutter-x));
+        margin-right: calc(-0.5 * var(--bs-gutter-x));
       }
     }
   }
@@ -1143,7 +1139,6 @@
       }
     }
   }
-
 }
 
 #hero {
@@ -1160,7 +1155,7 @@
   }
 }
 
-// hero portfolio 
+// hero portfolio
 .hero {
   &__content-8 {
     padding-top: 80px;
@@ -1246,7 +1241,6 @@
   }
 }
 
-
 .portfolio__big {
   text-align: center;
   padding-bottom: 395px;
@@ -1330,9 +1324,6 @@
     padding: 30px 15px;
   }
 }
-
-
-
 
 // Dark Version
 .dark {

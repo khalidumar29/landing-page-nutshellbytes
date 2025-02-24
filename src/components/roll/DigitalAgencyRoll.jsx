@@ -7,13 +7,25 @@ import "swiper/css/free-mode";
 import "swiper/css/autoplay";
 
 const DigitalAgencyRoll = () => {
+  const servicesRoll = [
+    "Full-Stack Development",
+    "E-commerce Development",
+    "Backend",
+    "SaaS",
+    "Cloud & DevOps Solutions",
+    "Digital Marketing",
+    "AI-Powered Product Development",
+    "Web Scraping",
+    "Automation",
+    "Branding & Graphic Design",
+  ];
   return (
     <>
-      <section className="roll__area">
-        <div className="roll__slider">
+      <section className='roll__area'>
+        <div className='roll__slider'>
           <Swiper
             modules={[FreeMode, Autoplay]}
-            spaceBetween={0}
+            spaceBetween={40}
             slidesPerView={1}
             freeMode={true}
             loop={true}
@@ -42,101 +54,22 @@ const DigitalAgencyRoll = () => {
               },
             }}
           >
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>Development</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>Studio</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>Strategy</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>Branding</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>Agency</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>typhography</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>Design</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>Interaction</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>Element</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>DIgital SOlution</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>Strategy</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>Branding</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>Agency</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>Interaction</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>DIgital SOlution</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>typhography</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>Design</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>Interaction</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>Element</h2>
-              </div>
-            </SwiperSlide>
+            {servicesRoll.map((service, index) => (
+              <SwiperSlide
+                style={{
+                  // flex: "0 0 100%",
+                  minWidth: "fit-content",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+                key={index}
+              >
+                <div className='roll__slide'>
+                  <h2>{service}</h2>
+                </div>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </section>
