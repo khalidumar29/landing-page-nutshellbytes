@@ -1,11 +1,29 @@
 export const portfolioSlides = [
   {
     id: 1,
-    title: "Benjon",
+    title: "callmi",
     type: "Website",
-    year: "2012",
-    image: "/assets/imgs/portfolio/3/1.jpg",
-    slug: "benjon-website",
+    year: "2023",
+    image: "/assets/imgs/portfolio/3/callmi.png",
+    slug: "callmi-website",
+    // Add any additional fields needed for details view
+    headerInfo: {
+      category: {
+        name: "Website",
+        link: "/category/website",
+      },
+      client: "walid daniel dib",
+      startDate: "feugust 2023",
+      handover: "February 2024",
+    },
+  },
+  {
+    id: 2,
+    title: "Arbor Assistant",
+    type: "",
+    year: "2023",
+    image: "/assets/imgs/portfolio/3/arboarassistant.png",
+    slug: "arbor-assistant",
     // Add any additional fields needed for details view
     headerInfo: {
       category: {
@@ -18,21 +36,38 @@ export const portfolioSlides = [
     },
   },
   {
-    id: 2,
-    title: "Test Website",
+    id: 3,
+    title: "Foresee Ai",
     type: "Website",
-    year: "2012",
-    image: "/assets/imgs/portfolio/3/1.jpg",
-    slug: "test-website",
+    year: "2023",
+    image: "/assets/imgs/portfolio/3/benjon.png",
+    slug: "foresee-ai",
+    headerInfo: {
+      category: {
+        name: "Website",
+        link: "/category/website",
+      },
+      client: "Gary Eisen & Robert Eisen",
+      startDate: "September 2023",
+      handover: "On Going",
+    },
+  },
+  {
+    id: 4,
+    title: "Road Mobility",
+    type: "Website",
+    year: "2023",
+    image: "/assets/imgs/portfolio/3/benjon.png",
+    slug: "road-mobility",
     // Add any additional fields needed for details view
     headerInfo: {
       category: {
         name: "Website",
         link: "/category/website",
       },
-      client: "Benjon Inc",
-      startDate: "January 2012",
-      handover: "March 2012",
+      client: "Gary Eisen & Robert Eisen",
+      startDate: "December 2023",
+      handover: "On Going",
     },
   },
   // ...other slides
@@ -41,7 +76,7 @@ export const portfolioSlides = [
 export const portfolioDetails = {
   "benjon-website": {
     id: 1,
-    title: "Benjon Website",
+    title: "callmi.co",
     headerInfo: {
       category: {
         name: "Development",
