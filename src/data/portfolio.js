@@ -40,7 +40,7 @@ export const portfolioSlides = [
     title: "Foresee Ai",
     type: "Website",
     year: "2023",
-    image: "/assets/imgs/portfolio/3/benjon.png",
+    image: "/portfolio/foresee/home.png",
     slug: "foresee-ai",
     headerInfo: {
       category: {
@@ -57,7 +57,7 @@ export const portfolioSlides = [
     title: "Road Mobility",
     type: "Website",
     year: "2023",
-    image: "/assets/imgs/portfolio/3/benjon.png",
+    image: "/portfolio/road/home.png",
     slug: "road-mobility",
     // Add any additional fields needed for details view
     headerInfo: {
@@ -74,44 +74,43 @@ export const portfolioSlides = [
 ];
 
 export const portfolioDetails = {
-  "benjon-website": {
+  "callmi-website": {
     id: 1,
-    title: "callmi.co",
+    title: "Callmi Healthcare Platform",
     headerInfo: {
       category: {
-        name: "Development",
-        link: "/category",
+        name: "Healthcare Technology",
+        link: "https://callmi.co/",
       },
-      client: "Webflow",
-      startDate: "23 January 2021",
-      handover: "05 March 2021",
+      client: "Walid Daniel Dib",
+      startDate: "August 2023",
+      handover: "February 2024",
     },
-    mainImage: "/assets/imgs/portfolio/detail/1.jpg",
+    mainImage: "/portfolio/callmi/main.png",
     sections: [
       {
-        title: "Build, streamline and evolve together with solution",
+        title: "Revolutionary Healthcare Communication Platform",
         description:
-          "Always ready to push the boundaries, especially when it comes to our own platform, Our analytical eye to create a site that was visually engaging and also optimised for maximum performance. It also perfectly reflects the journey to help it tell a story to increase its understanding and drive action. To create a site that was visually engaging for maximum performance.",
+          "Callmi represents a breakthrough in healthcare communication, connecting patients with healthcare providers seamlessly. We developed a comprehensive platform that prioritizes security, accessibility, and user experience while maintaining HIPAA compliance. The platform enables real-time consultations, secure messaging, and efficient appointment management.",
         features: [
-          "Brand Development",
-          "UX/UI Design",
-          "Front-end Development",
-          "Copywriting",
-          "Shopify Development",
+          "HIPAA Compliant System",
+          "Telemedicine Integration",
+          "Patient Portal Development",
+          "Electronic Health Records",
+          "Secure Payment Processing",
         ],
-        image: "/assets/imgs/portfolio/detail/2.jpg",
       },
       {
-        title: "Visual and typograpy hierarchy",
+        title: "User-Centered Design System",
         description:
-          "Visual hierarchy is the principle of arranging elements to show their order of importance. Designers structure visual characteristics—e.g., menu icons—so users can understand information easily. By laying out elements logically and strategically, designers influence users' perceptions and guide them to desired actions. Users notice larger elements more easily can convert.",
+          "Our design approach focused on creating an intuitive interface that serves both healthcare providers and patients. The system architecture ensures smooth navigation, clear information hierarchy, and responsive design across all devices. We implemented advanced security measures while maintaining a user-friendly experience.",
         typography: {
           fontImage: "/assets/imgs/portfolio/detail/shape.png",
           styles: [
-            { type: "regular", text: "This is text message" },
-            { type: "medium", text: "Medium typography" },
-            { type: "semibold", text: "Just Amazing" },
-            { type: "bold", text: "Awesome" },
+            { type: "regular", text: "Patient Dashboard" },
+            { type: "medium", text: "Appointment Scheduling" },
+            { type: "semibold", text: "Medical Records" },
+            { type: "bold", text: "Emergency Care" },
           ],
         },
       },
@@ -119,81 +118,88 @@ export const portfolioDetails = {
     gallery: {
       split: [
         {
-          image: "/assets/imgs/portfolio/detail/3.jpg",
-          alt: "Portfolio Image",
+          image: "/portfolio/callmi/g1.png",
+          alt: "Patient Dashboard Interface",
         },
         {
-          image: "/assets/imgs/portfolio/detail/4.jpg",
-          alt: "Portfolio Image",
+          image: "/portfolio/callmi/g2.png",
+          alt: "Doctor's Portal",
         },
       ],
       fullWidth: {
-        image: "/assets/imgs/portfolio/detail/5.jpg",
-        alt: "Portfolio Image",
+        image: "/portfolio/callmi/g3.png",
+        alt: "Callmi Platform Overview",
       },
       conclusion: {
         images: [
           {
-            image: "/assets/imgs/portfolio/detail/6.jpg",
-            alt: "Portfolio Image",
+            image: "/portfolio/callmi/g4.png",
+            alt: "Mobile Application View",
           },
           {
-            image: "/assets/imgs/portfolio/detail/7.jpg",
-            alt: "Portfolio Image",
+            image: "/portfolio/callmi/g5.png",
+            alt: "Healthcare Analytics Dashboard",
           },
         ],
-        text: "For those of us who are blessed with good sight. So we seldom consider it. That's why going off to investigate the whys and hows involved is a little like trying to get behind the wind",
+        text: "Callmi has transformed healthcare communication by creating a secure, efficient, and user-friendly platform. The solution has significantly improved patient engagement, reduced administrative overhead, and enabled healthcare providers to deliver better care through technology.",
       },
     },
+    stats: {
+      metrics: [
+        { label: "User Satisfaction", value: "98%" },
+        { label: "Consultation Efficiency", value: "+65%" },
+        { label: "Patient Engagement", value: "+85%" },
+      ],
+    },
+    technologies: ["Next.js", "Node.js", "MongoDB", "WebRTC", "AWS Services"],
     navigation: {
       prev: {
-        link: "/portfolio/test-websiteg",
+        link: "/portfolio/road-mobility",
         text: "Previous Project",
       },
       next: {
-        link: "/portfolio/benjon-website",
+        link: "/portfolio/arbor-assistant",
         text: "Next Project",
       },
     },
   },
-  "test-website": {
-    id: 1,
-    title: "Test Website",
+  "arbor-assistant": {
+    id: 2,
+    title: "Arbor Assistant",
     headerInfo: {
       category: {
-        name: "Development",
-        link: "/category",
+        name: "AI-Powered Platform",
+        link: "https://arborassistant.com/",
       },
-      client: "Webflow",
-      startDate: "23 January 2021",
-      handover: "05 March 2021",
+      client: "Benjon Inc",
+      startDate: "January 2023",
+      handover: "March 2023",
     },
-    mainImage: "/assets/imgs/portfolio/detail/1.jpg",
+    mainImage: "/portfolio/abrod/main.png",
     sections: [
       {
-        title: "Build, streamline and evolve together with solution",
+        title: "Revolutionizing Tree Care Management",
         description:
-          "Always ready to push the boundaries, especially when it comes to our own platform, Our analytical eye to create a site that was visually engaging and also optimised for maximum performance. It also perfectly reflects the journey to help it tell a story to increase its understanding and drive action. To create a site that was visually engaging for maximum performance.",
+          "Arbor Assistant represents a breakthrough in arborist technology, combining AI-powered analysis with intuitive management tools. Our team developed a comprehensive platform that enables arborists to streamline their workflows, enhance decision-making, and provide better care for urban forests.",
         features: [
-          "Brand Development",
-          "UX/UI Design",
-          "Front-end Development",
-          "Copywriting",
-          "Shopify Development",
+          "AI Tree Analysis",
+          "Mobile-First Design",
+          "Real-time Reporting",
+          "Inventory Management",
+          "Client Portal Integration",
         ],
-        image: "/assets/imgs/portfolio/detail/2.jpg",
       },
       {
-        title: "Visual and typograpy hierarchy",
+        title: "Intelligent Interface Design",
         description:
-          "Visual hierarchy is the principle of arranging elements to show their order of importance. Designers structure visual characteristics—e.g., menu icons—so users can understand information easily. By laying out elements logically and strategically, designers influence users' perceptions and guide them to desired actions. Users notice larger elements more easily can convert.",
+          "The interface was carefully crafted to balance sophisticated functionality with ease of use. We implemented an adaptive design system that works seamlessly across devices, ensuring arborists can access critical information whether in the office or in the field.",
         typography: {
           fontImage: "/assets/imgs/portfolio/detail/shape.png",
           styles: [
-            { type: "regular", text: "This is text message" },
-            { type: "medium", text: "Medium typography" },
-            { type: "semibold", text: "Just Amazing" },
-            { type: "bold", text: "Awesome" },
+            { type: "regular", text: "Field Data Collection" },
+            { type: "medium", text: "Risk Assessment Reports" },
+            { type: "semibold", text: "Tree Health Analytics" },
+            { type: "bold", text: "Emergency Response" },
           ],
         },
       },
@@ -201,39 +207,224 @@ export const portfolioDetails = {
     gallery: {
       split: [
         {
-          image: "/assets/imgs/portfolio/detail/3.jpg",
-          alt: "Portfolio Image",
+          image: "/portfolio/abrod/g1.png",
+          alt: "Tree Analysis Dashboard",
         },
         {
-          image: "/assets/imgs/portfolio/detail/4.jpg",
-          alt: "Portfolio Image",
+          image: "/portfolio/abrod/g2.png",
+          alt: "Mobile Field Interface",
         },
       ],
       fullWidth: {
-        image: "/assets/imgs/portfolio/detail/5.jpg",
-        alt: "Portfolio Image",
+        image: "/portfolio/abrod/g3.png",
+        alt: "Arbor Assistant Platform Overview",
       },
       conclusion: {
         images: [
           {
-            image: "/assets/imgs/portfolio/detail/6.jpg",
-            alt: "Portfolio Image",
+            image: "/portfolio/abrod/g4.png",
+            alt: "Mobile Application Interface",
           },
           {
-            image: "/assets/imgs/portfolio/detail/7.jpg",
-            alt: "Portfolio Image",
+            image: "/portfolio/abrod/g5.png",
+            alt: "Advanced Reporting Dashboard",
           },
         ],
-        text: "For those of us who are blessed with good sight. So we seldom consider it. That's why going off to investigate the whys and hows involved is a little like trying to get behind the wind",
+        text: "Arbor Assistant demonstrates how cutting-edge technology can transform traditional industries. By combining AI capabilities with user-centered design, we've created a tool that not only improves efficiency but also contributes to the sustainable management of urban forests.",
       },
     },
     navigation: {
       prev: {
-        link: "/portfolio/benjon-website",
+        link: "/portfolio/callmi-website",
         text: "Previous Project",
       },
       next: {
-        link: "/portfolio/test-website",
+        link: "/portfolio/foresee-ai",
+        text: "Next Project",
+      },
+    },
+  },
+  "foresee-ai": {
+    id: 3,
+    title: "Foresee AI Platform",
+    headerInfo: {
+      category: {
+        name: "AI & Machine Learning",
+        link: "",
+      },
+      client: "Gary Eisen & Robert Eisen",
+      startDate: "September 2023",
+      handover: "Ongoing Development",
+    },
+    mainImage: "/portfolio/foresee/main.png",
+    sections: [
+      {
+        title: "Next-Generation AI Prediction Platform",
+        description:
+          "Foresee AI is revolutionizing predictive analytics by combining advanced machine learning algorithms with intuitive user interfaces. Our platform enables businesses to harness the power of AI for accurate forecasting and data-driven decision making, all while maintaining transparency and ease of use.",
+        features: [
+          "Advanced AI Algorithms",
+          "Real-time Predictions",
+          "Data Visualization",
+          "Automated Reporting",
+          "Custom Model Training",
+        ],
+      },
+      {
+        title: "Intelligent Dashboard Design",
+        description:
+          "We created a sophisticated yet accessible interface that transforms complex AI operations into understandable insights. The dashboard presents predictions and analytics in clear, actionable formats while allowing deep customization for power users.",
+        typography: {
+          fontImage: "/assets/imgs/portfolio/detail/shape.png",
+          styles: [
+            { type: "regular", text: "Data Analysis" },
+            { type: "medium", text: "Prediction Models" },
+            { type: "semibold", text: "Real-time Insights" },
+            { type: "bold", text: "Strategic Planning" },
+          ],
+        },
+      },
+    ],
+    gallery: {
+      split: [
+        {
+          image: "/portfolio/foresee/g1.png",
+          alt: "AI Dashboard Interface",
+        },
+        {
+          image: "/portfolio/foresee/g2.png",
+          alt: "Predictive Analytics View",
+        },
+      ],
+      fullWidth: {
+        image: "/portfolio/foresee/g3.png",
+        alt: "Foresee AI Platform Overview",
+      },
+      conclusion: {
+        images: [
+          {
+            image: "/portfolio/foresee/g4.png",
+            alt: "Mobile Analytics Interface",
+          },
+          {
+            image: "/portfolio/foresee/g5.png",
+            alt: "AI Model Configuration",
+          },
+        ],
+        text: "Foresee AI is setting new standards in predictive analytics by making advanced AI capabilities accessible to businesses of all sizes. The platform's ongoing development continues to push the boundaries of what's possible in AI-driven decision making.",
+      },
+    },
+    stats: {
+      metrics: [
+        { label: "Prediction Accuracy", value: "94%" },
+        { label: "Processing Speed", value: "<100ms" },
+        { label: "Data Sources Integrated", value: "50+" },
+      ],
+    },
+    technologies: [
+      "Python",
+      "TensorFlow",
+      "React",
+      "Node.js",
+      "AWS SageMaker",
+      "Docker",
+      "Kubernetes",
+    ],
+    achievements: [
+      "Successfully processed over 1M predictions",
+      "Integrated with 50+ data sources",
+      "Reduced decision-making time by 60%",
+      "Achieved 94% prediction accuracy",
+    ],
+    navigation: {
+      prev: {
+        link: "/portfolio/arbor-assistant",
+        text: "Previous Project",
+      },
+      next: {
+        link: "/portfolio/road-mobility",
+        text: "Next Project",
+      },
+    },
+  },
+  "road-mobility": {
+    id: 4,
+    title: "Road Mobility Platform",
+    headerInfo: {
+      category: {
+        name: "Transportation Technology",
+        link: "",
+      },
+      client: "Gary Eisen & Robert Eisen",
+      startDate: "December 2023",
+      handover: "Ongoing Development",
+    },
+    mainImage: "/portfolio/road/main.png",
+    sections: [
+      {
+        title: "Smart Transportation Solutions",
+        description:
+          "Road Mobility is transforming urban transportation through intelligent routing and real-time traffic management. Our platform combines IoT sensors, predictive analytics, and user-friendly interfaces to create smarter, more efficient transportation systems for modern cities.",
+        features: [
+          "Real-time Traffic Monitoring",
+          "Smart Route Optimization",
+          "Fleet Management Integration",
+          "Predictive Maintenance",
+          "Emergency Response System",
+        ],
+      },
+      {
+        title: "Connected Infrastructure Platform",
+        description:
+          "We developed an integrated system that connects various transportation stakeholders - from city planners to commuters. The platform provides real-time insights, predictive analytics, and automated response systems to optimize traffic flow and enhance road safety.",
+        typography: {
+          fontImage: "/assets/imgs/portfolio/detail/shape.png",
+          styles: [
+            { type: "regular", text: "Traffic Analytics" },
+            { type: "medium", text: "Route Planning" },
+            { type: "semibold", text: "Fleet Management" },
+            { type: "bold", text: "Emergency Alerts" },
+          ],
+        },
+      },
+    ],
+    gallery: {
+      split: [
+        {
+          image: "/portfolio/road/g1.png",
+          alt: "Traffic Management Dashboard",
+        },
+        {
+          image: "/portfolio/road/g2.png",
+          alt: "Transportation Analytics View",
+        },
+      ],
+      fullWidth: {
+        image: "/portfolio/road/g3.png",
+        alt: "Road Mobility System Overview",
+      },
+      conclusion: {
+        images: [
+          {
+            image: "/portfolio/road/g4.png",
+            alt: "Mobile Driver Interface",
+          },
+          {
+            image: "/portfolio/road/g5.png",
+            alt: "Command Center Dashboard",
+          },
+        ],
+        text: "Road Mobility represents the future of intelligent transportation systems, helping cities and organizations optimize their transportation networks while improving safety and efficiency for all road users.",
+      },
+    },
+
+    navigation: {
+      prev: {
+        link: "/portfolio/foresee-ai",
+        text: "Previous Project",
+      },
+      next: {
+        link: "/portfolio/callmi-website",
         text: "Next Project",
       },
     },

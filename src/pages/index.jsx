@@ -12,6 +12,7 @@ import DigitalAgencyPortfolio from "@/components/portfolio/DigitalAgencyPortfoli
 import DigitalAgencyBrand from "@/components/brand/DigitalAgencyBrand";
 import DigitalAgencyTestimonial from "@/components/testimonial/DigitalAgencyTestimonial";
 import DigitalAgencyCTA from "@/components/cta/DigitalAgencyCTA";
+import AboutTestimonial from "@/components/testimonial/AboutTestimonial";
 
 const DigitalAgency = () => {
   const modalTestimonial1 = useRef();
@@ -93,14 +94,15 @@ const DigitalAgency = () => {
           <DigitalAgencyWorkflow />
           <DigitalAgencyPortfolio />
           <DigitalAgencyBrand />
-          <DigitalAgencyTestimonial
+          {/* <DigitalAgencyTestimonial
             modalTestimonial1={modalTestimonial1}
             modalTestimonial2={modalTestimonial2}
             modalTestimonial3={modalTestimonial3}
             modalClose1={modalClose1}
             modalClose2={modalClose2}
             modalClose3={modalClose3}
-          />
+          /> */}
+          <AboutTestimonial />
           {/* <DigitalAgencyBlog /> */}
           <DigitalAgencyCTA />
         </RootLayout>
