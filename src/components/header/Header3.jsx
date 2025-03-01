@@ -53,6 +53,9 @@ export default function Header3() {
                 priority
                 width={33}
                 height={100}
+                style={{
+                  height: "auto",
+                }}
                 className='logo-primary'
                 src={LogoWhite}
                 alt='Site Logo'
@@ -61,6 +64,9 @@ export default function Header3() {
                 priority
                 width={100}
                 height={33}
+                style={{
+                  height: "auto",
+                }}
                 className='logo-secondary'
                 src={LogoWhite2}
                 alt='Moibile Logo'
@@ -80,7 +86,7 @@ export default function Header3() {
           </div>
           <div className='header__support'>
             <p>
-              Support center <a href='tel:+9587325902'>+9 587 325 902</a>
+              Support center <a href='tel:+8801779115089'>+8801779115089</a>
             </p>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import LogoWhite2 from "../../../public/assets/imgs/logo/site-logo-white-2.png";
+import LogoWhite2 from "../../../public/assets/imgs/logo/logo-white.png";
 import LogoBlack from "../../../public/assets/imgs/logo/logo-black.png";
 import Image from "next/image";
 
@@ -9,6 +9,10 @@ export default function LogoItem() {
       <div className='header__logo-2'>
         <Link href={"/"} className='logo-dark'>
           <Image
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
             priority
             width={136}
             height={45}
@@ -18,6 +22,10 @@ export default function LogoItem() {
         </Link>
         <Link href={"/"} className='logo-light'>
           <Image
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
             priority
             width={100}
             height={33}
