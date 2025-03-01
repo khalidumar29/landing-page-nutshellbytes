@@ -90,7 +90,7 @@ const PortfolioDetailsDark = ({ portfolioData }) => {
   return (
     <>
       <Head>
-        <title>Portfolio Details Dark</title>
+        <title>Nutshell Bytes | {portfolioData.title}</title>
         <meta name='description' content='Portfolio Details Dark Description' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>

@@ -6,7 +6,7 @@ const ContactDark = () => {
   return (
     <>
       <Head>
-        <title>Contact Dark</title>
+        <title>Nutshell Bytes | Contact</title>
         <meta name='description' content='Contact Dark Description' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>
