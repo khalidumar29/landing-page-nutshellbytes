@@ -76,23 +76,23 @@ export default function RootLayout({
   return (
     <>
       <CommonAnimation>
-        <div className="has-smooth" id="has_smooth"></div>
+        <div className='has-smooth' id='has_smooth'></div>
         <ScrollSmootherComponents />
-        <div className="cursor" id="team_cursor">
+        <div className='cursor' id='team_cursor'>
           Drag
         </div>
         <Preloader />
         <CursorAnimation cursor1={cursor1} cursor2={cursor2} />
-        <Switcher
+        {/* <Switcher
           setMode={setMode}
           mode={mode}
           cursor1={cursor1}
           cursor2={cursor2}
-        />
+        /> */}
         <ScrollTop />
         <HeaderContent header={header} navData={navData} />
-        <div id="smooth-wrapper">
-          <div id="smooth-content">
+        <div id='smooth-wrapper'>
+          <div id='smooth-content'>
             {children}
             <FooterContent footer={footer} />
           </div>
