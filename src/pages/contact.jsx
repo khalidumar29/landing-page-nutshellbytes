@@ -6,8 +6,11 @@ const ContactDark = () => {
   return (
     <>
       <Head>
-        <title>Nutshell Bytes | Contact</title>
-        <meta name='description' content='Contact Dark Description' />
+        <title>Contact Us | Let's Build Something Amazing Together</title>
+        <meta
+          name='description'
+          content="Ready to transform your digital presence? Get in touch with our team of experts. We're here to discuss your project answer questions, and help bring your vision to life."
+        />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>
       <main>
