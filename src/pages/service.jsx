@@ -8,8 +8,11 @@ const ServiceV6Dark = () => {
   return (
     <div>
       <Head>
-        <title>Service V6 Dark</title>
-        <meta name='description' content='Service V6 Dark Description' />
+        <title>Our Services | Digital Solutions & Web Development</title>
+        <meta
+          name='description'
+          content='Transform your business with our comprehensive digital solutions. We offer web development, UI/UX design, e-commerce solutions, and cutting-edge technology services tailored to your needs.'
+        />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>
       <main>

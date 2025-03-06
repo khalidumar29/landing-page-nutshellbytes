@@ -12,8 +12,11 @@ const AboutDark = () => {
   return (
     <div>
       <Head>
-        <title>About Dark</title>
-        <meta name='description' content='About Dark Description' />
+        <title>About Us | Innovative Digital Solutions Agency</title>
+        <meta
+          name='description'
+          content='Learn about our journey in creating innovative digital solutions. With expertise in web development, AI, and digital transformation, we help businesses achieve their digital potential.'
+        />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>
       <main>

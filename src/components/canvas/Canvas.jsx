@@ -59,7 +59,7 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
               <Link href='/'>
                 <Image
                   priority
-                  style={{ width: "auto", height: "auto" }}
+                  style={{ width: "auto", height: "300px" }}
                   src={logoWhite2}
                   alt='Offcanvas Logo'
                 />
@@ -68,12 +68,6 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
             <div className='offcanvas__social'>
               <h3 className='social-title'>Follow Us</h3>
               <ul>
-                <li>
-                  <a href='#'>Dribbble</a>
-                </li>
-                <li>
-                  <a href='#'>Behance</a>
-                </li>
                 <li>
                   <a href='#'>Instagram</a>
                 </li>

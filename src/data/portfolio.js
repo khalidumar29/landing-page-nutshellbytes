@@ -76,10 +76,10 @@ export const portfolioSlides = [
 export const portfolioDetails = {
   "callmi-website": {
     id: 1,
-    title: "Callmi Healthcare Platform",
+    title: "Callmi Expert Connection Platform",
     headerInfo: {
       category: {
-        name: "Healthcare Technology",
+        name: "Knowledge Sharing & Consulting",
         link: "https://callmi.co/",
       },
       client: "Walid Daniel Dib",
@@ -89,28 +89,28 @@ export const portfolioDetails = {
     mainImage: "/portfolio/callmi/main.png",
     sections: [
       {
-        title: "Revolutionary Healthcare Communication Platform",
+        title: "On-Demand Expert Consultation Platform",
         description:
-          "Callmi represents a breakthrough in healthcare communication, connecting patients with healthcare providers seamlessly. We developed a comprehensive platform that prioritizes security, accessibility, and user experience while maintaining HIPAA compliance. The platform enables real-time consultations, secure messaging, and efficient appointment management.",
+          "Callmi is a specialized platform connecting users with Middle East's elite experts for personalized 1:1 video consultations. We developed a comprehensive solution that enables users to book on-demand sessions with founders, operators, and investors to discuss challenges and find winning solutions, eliminating the need for trial and error learning.",
         features: [
-          "HIPAA Compliant System",
-          "Telemedicine Integration",
-          "Patient Portal Development",
-          "Electronic Health Records",
+          "Expert Profile Management",
+          "Video Call Integration",
+          "Appointment Scheduling",
           "Secure Payment Processing",
+          "User Account Management",
         ],
       },
       {
         title: "User-Centered Design System",
         description:
-          "Our design approach focused on creating an intuitive interface that serves both healthcare providers and patients. The system architecture ensures smooth navigation, clear information hierarchy, and responsive design across all devices. We implemented advanced security measures while maintaining a user-friendly experience.",
+          "Our design approach focused on creating an intuitive interface that serves both experts and knowledge seekers. The system architecture ensures smooth navigation, clear information hierarchy, and responsive design across all devices. We implemented advanced booking systems while maintaining a user-friendly experience.",
         typography: {
           fontImage: "/assets/imgs/portfolio/detail/shape.png",
           styles: [
-            { type: "regular", text: "Patient Dashboard" },
-            { type: "medium", text: "Appointment Scheduling" },
-            { type: "semibold", text: "Medical Records" },
-            { type: "bold", text: "Emergency Care" },
+            { type: "regular", text: "Expert Discovery" },
+            { type: "medium", text: "Session Booking" },
+            { type: "semibold", text: "Video Consultations" },
+            { type: "bold", text: "Knowledge Exchange" },
           ],
         },
       },
@@ -119,11 +119,11 @@ export const portfolioDetails = {
       split: [
         {
           image: "/portfolio/callmi/g1.png",
-          alt: "Patient Dashboard Interface",
+          alt: "Expert Discovery Interface",
         },
         {
           image: "/portfolio/callmi/g2.png",
-          alt: "Doctor's Portal",
+          alt: "Booking Management View",
         },
       ],
       fullWidth: {
@@ -138,17 +138,17 @@ export const portfolioDetails = {
           },
           {
             image: "/portfolio/callmi/g5.png",
-            alt: "Healthcare Analytics Dashboard",
+            alt: "Expert Dashboard",
           },
         ],
-        text: "Callmi has transformed healthcare communication by creating a secure, efficient, and user-friendly platform. The solution has significantly improved patient engagement, reduced administrative overhead, and enabled healthcare providers to deliver better care through technology.",
+        text: "Callmi has transformed knowledge sharing in the Middle East by creating a platform that connects users with elite experts for personalized advice. The solution enables direct learning from experienced founders, operators, and investors, helping users overcome challenges through proven solutions rather than trial and error.",
       },
     },
     stats: {
       metrics: [
-        { label: "User Satisfaction", value: "98%" },
-        { label: "Consultation Efficiency", value: "+65%" },
-        { label: "Patient Engagement", value: "+85%" },
+        { label: "Expert Satisfaction", value: "95%" },
+        { label: "Knowledge Transfer", value: "+80%" },
+        { label: "User Problem Resolution", value: "+85%" },
       ],
     },
     technologies: ["Next.js", "Node.js", "MongoDB", "WebRTC", "AWS Services"],

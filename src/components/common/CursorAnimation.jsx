@@ -35,8 +35,8 @@ const CursorAnimation = ({ cursor1, cursor2 }) => {
   }, []);
   return (
     <>
-      <div className="cursor1" ref={cursor1}></div>
-      <div className="cursor2" ref={cursor2}></div>
+      {/* <div className="cursor1" ref={cursor1}></div> */}
+      {/* <div className='cursor2' ref={cursor2}></div> */}
     </>
   );
 };

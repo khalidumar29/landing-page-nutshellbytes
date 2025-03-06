@@ -27,7 +27,7 @@ export default function Footer3() {
                   <div className='footer__widget'>
                     <Image
                       priority
-                      style={{ width: "auto", height: "auto" }}
+                      style={{ width: "200px", height: "auto" }}
                       className='footer__logo'
                       src={FooterLogoWhite}
                       alt='Footer Logo'

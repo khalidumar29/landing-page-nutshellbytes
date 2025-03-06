@@ -7,8 +7,11 @@ const PortfolioV4Dark = () => {
   return (
     <>
       <Head>
-        <title>Portfolio V4 dark</title>
-        <meta name='description' content='Portfolio V4 dark Description' />
+        <title>Our Work | Transforming Ideas into Digital Reality</title>
+        <meta
+          name='description'
+          content='Explore our portfolio of innovative digital solutions. From AI-powered platforms to seamless e-commerce experiences, discover how we help businesses thrive in the digital world.'
+        />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>
       <main>

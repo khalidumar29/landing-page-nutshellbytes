@@ -68,7 +68,7 @@ const services = {
       id: "experience-driven-ux-design",
       slug: "experience-driven-ux-design",
       title: "Experience-Driven UX Design",
-      highlight: "User-Centered Approach",
+      highlight: "Simplify interfaces",
       description:
         "Designing intuitive experiences that enhance usability and engagement, tailored to user needs.",
       features: [
@@ -100,7 +100,7 @@ const services = {
       id: "interactive-prototyping",
       slug: "interactive-prototyping",
       title: "Interactive Prototyping Framework",
-      highlight: "Transforming - Ideas Success",
+      highlight: "Transforming Ideas Success",
       description:
         "Building realistic prototypes that allow users to interact with the product before development begins.",
       features: [
