@@ -2,21 +2,23 @@ import Head from "next/head";
 import RootLayout from "@/components/common/layout/RootLayout";
 import PortfolioDetails1 from "@/components/portfolio/PortfolioDetails1";
 import {
-  getAllPortfolioSlugs,
-  getPortfolioDetail,
   portfolioDetails,
   portfolioSlides,
+  digitalMarketingDetails,
 } from "@/data/portfolio";
 import { useRouter } from "next/router";
 
 export async function getStaticPaths() {
-  // Get paths from both portfolioDetails and portfolioSlides
+  // Get paths from all three data sources
   const paths = [
     ...Object.keys(portfolioDetails).map((slug) => ({
       params: { portfolio: slug },
     })),
     ...portfolioSlides.map((slide) => ({
       params: { portfolio: slide.slug },
+    })),
+    ...Object.keys(digitalMarketingDetails).map((slug) => ({
+      params: { portfolio: slug },
     })),
   ];
 
@@ -26,56 +28,41 @@ export async function getStaticPaths() {
   };
 }
 
-export const getPortfolioNavigation = (currentSlug) => {
-  // Get all slugs from both sources
+function getPortfolioNavigation(currentSlug) {
+  // Combine all slugs from different sources
   const allSlugs = [
     ...Object.keys(portfolioDetails),
     ...portfolioSlides.map((slide) => slide.slug),
+    ...Object.keys(digitalMarketingDetails),
   ];
 
   const currentIndex = allSlugs.indexOf(currentSlug);
-
-  if (currentIndex === -1) return null;
-
   return {
-    prev: {
-      link: `/portfolio/${
-        currentIndex > 0
-          ? allSlugs[currentIndex - 1]
-          : allSlugs[allSlugs.length - 1]
-      }`,
-      text: "Previous Project",
-    },
-    next: {
-      link: `/portfolio/${
-        currentIndex < allSlugs.length - 1
-          ? allSlugs[currentIndex + 1]
-          : allSlugs[0]
-      }`,
-      text: "Next Project",
-    },
+    prev: currentIndex > 0 ? allSlugs[currentIndex - 1] : null,
+    next:
+      currentIndex < allSlugs.length - 1 ? allSlugs[currentIndex + 1] : null,
   };
-};
+}
 
 export async function getStaticProps({ params }) {
-  // Try to get data from portfolioDetails first
+  // Try to get data from all three sources
   const detailData = portfolioDetails[params.portfolio];
-
-  // If not in details, try to find in slides
   const slideData = portfolioSlides.find(
     (slide) => slide.slug === params.portfolio
   );
+  const marketingData = digitalMarketingDetails[params.portfolio];
 
-  // If neither exists, return 404
-  if (!detailData && !slideData) {
+  // If none exists, return 404
+  if (!detailData && !slideData && !marketingData) {
     return {
       notFound: true,
     };
   }
+
   const navigation = getPortfolioNavigation(params.portfolio);
   return {
     props: {
-      portfolioData: detailData || slideData,
+      portfolioData: detailData || slideData || marketingData,
       navigation,
     },
   };

@@ -1,3 +1,4 @@
+// Web Development Portfolio Data
 export const portfolioSlides = [
   {
     id: 1,
@@ -70,7 +71,6 @@ export const portfolioSlides = [
       handover: "On Going",
     },
   },
-  // ...other slides
 ];
 
 export const portfolioDetails = {
@@ -431,8 +431,475 @@ export const portfolioDetails = {
   },
 };
 
+// Digital Marketing Portfolio Data
+
+export const digitalMarketingSlides = [
+  {
+    id: 1,
+    title: "NutriBoost",
+    type: "Social Media Campaign",
+    year: "2023",
+    image: "/portfolio/foresee/home.png",
+    slug: "nutriboost-campaign",
+    headerInfo: {
+      category: {
+        name: "Social Media Campaign",
+        link: "/category/social-media",
+      },
+      client: "NutriBoost Health Foods",
+      startDate: "March 2023",
+      handover: "August 2023",
+    },
+  },
+  {
+    id: 2,
+    title: "EcoStyle",
+    type: "Content Marketing",
+    year: "2023",
+    image: "/portfolio/foresee/home.png",
+    slug: "ecostyle-content",
+    headerInfo: {
+      category: {
+        name: "Content Marketing",
+        link: "/category/content-marketing",
+      },
+      client: "EcoStyle Apparel",
+      startDate: "January 2023",
+      handover: "June 2023",
+    },
+  },
+  {
+    id: 3,
+    title: "TechVision",
+    type: "SEO & PPC",
+    year: "2023",
+    image: "/assets/imgs/portfolio/3/callmi.png",
+    slug: "techvision-seo",
+    headerInfo: {
+      category: {
+        name: "SEO & PPC",
+        link: "/category/seo-ppc",
+      },
+      client: "TechVision Solutions",
+      startDate: "May 2023",
+      handover: "December 2023",
+    },
+  },
+  {
+    id: 4,
+    title: "Urban Escape",
+    type: "Email Marketing",
+    year: "2024",
+    image: "/portfolio/foresee/home.png",
+    slug: "urbanescape-email",
+    headerInfo: {
+      category: {
+        name: "Email Marketing",
+        link: "/category/email-marketing",
+      },
+      client: "Urban Escape Hotels",
+      startDate: "November 2023",
+      handover: "March 2024",
+    },
+  },
+  // ...other slides
+];
+
+export const digitalMarketingDetails = {
+  "nutriboost-campaign": {
+    id: 1,
+    title: "NutriBoost Social Media Campaign",
+    headerInfo: {
+      category: {
+        name: "Social Media Marketing",
+        link: "https://nutriboost.com/",
+      },
+      client: "NutriBoost Health Foods",
+      startDate: "March 2023",
+      handover: "August 2023",
+    },
+    mainImage: "/portfolio/nutriboost/main.png",
+    sections: [
+      {
+        title: "Comprehensive Social Media Strategy",
+        description:
+          "NutriBoost needed to increase brand awareness and drive sales for their new line of plant-based protein products. We developed a multi-platform social media campaign that showcased their products through compelling storytelling, influencer partnerships, and interactive content formats, resulting in significant growth in engagement and sales.",
+        features: [
+          "Platform-Specific Content Strategy",
+          "Influencer Collaborations",
+          "User-Generated Content Campaigns",
+          "Interactive Stories & Reels",
+          "Community Management & Engagement",
+        ],
+      },
+      {
+        title: "Visual Identity & Content Creation",
+        description:
+          "We created a cohesive visual language that strengthened NutriBoost's brand recognition across platforms while maintaining platform-specific best practices. Our content mix included lifestyle photography, recipe videos, workout tips, and educational content about plant-based nutrition to establish the brand as an authority in the health space.",
+        typography: {
+          fontImage: "/assets/imgs/portfolio/detail/shape.png",
+          styles: [
+            { type: "regular", text: "Lifestyle Content" },
+            { type: "medium", text: "Product Showcases" },
+            { type: "semibold", text: "Educational Series" },
+            { type: "bold", text: "Influencer Takeovers" },
+          ],
+        },
+      },
+    ],
+    gallery: {
+      split: [
+        {
+          image: "/portfolio/nutriboost/g1.png",
+          alt: "Instagram Feed Strategy",
+        },
+        {
+          image: "/portfolio/nutriboost/g2.png",
+          alt: "TikTok Campaign Visuals",
+        },
+      ],
+      fullWidth: {
+        image: "/portfolio/nutriboost/g3.png",
+        alt: "Cross-Platform Campaign Overview",
+      },
+      conclusion: {
+        images: [
+          {
+            image: "/portfolio/nutriboost/g4.png",
+            alt: "Engagement Metrics Dashboard",
+          },
+          {
+            image: "/portfolio/nutriboost/g5.png",
+            alt: "Influencer Collaboration Results",
+          },
+        ],
+        text: "The NutriBoost social media campaign transformed the brand's digital presence, resulting in a 215% increase in engagement, 45% growth in follower count, and a 32% increase in direct sales from social channels. By combining strategic platform selection with compelling content, we helped NutriBoost connect with their target audience in meaningful ways.",
+      },
+    },
+    stats: {
+      metrics: [
+        { label: "Engagement Increase", value: "215%" },
+        { label: "Follower Growth", value: "45%" },
+        { label: "Sales Conversion", value: "32%" },
+      ],
+    },
+    technologies: [
+      "Instagram",
+      "TikTok",
+      "Facebook",
+      "Pinterest",
+      "Sprout Social",
+      "Canva Pro",
+      "Adobe Creative Suite",
+    ],
+    navigation: {
+      prev: {
+        link: "/portfolio/urbanescape-email",
+        text: "Previous Project",
+      },
+      next: {
+        link: "/portfolio/ecostyle-content",
+        text: "Next Project",
+      },
+    },
+  },
+  "ecostyle-content": {
+    id: 2,
+    title: "EcoStyle Content Marketing Strategy",
+    headerInfo: {
+      category: {
+        name: "Content Marketing",
+        link: "https://ecostyle.com/",
+      },
+      client: "EcoStyle Apparel",
+      startDate: "January 2023",
+      handover: "June 2023",
+    },
+    mainImage: "/portfolio/ecostyle/main.png",
+    sections: [
+      {
+        title: "Sustainable Fashion Storytelling",
+        description:
+          "EcoStyle needed to position themselves as leaders in sustainable fashion while educating consumers about their eco-friendly practices. We developed a comprehensive content marketing strategy spanning their blog, podcast, and video channels to highlight their commitment to sustainability while showcasing their stylish apparel collections.",
+        features: [
+          "Editorial Calendar Development",
+          "Blog Content Creation",
+          "Podcast Series Production",
+          "Video Content Strategy",
+          "Sustainability Reporting",
+        ],
+      },
+      {
+        title: "Multi-Channel Content Ecosystem",
+        description:
+          "We created an interconnected content ecosystem that leveraged each channel's strengths while maintaining a cohesive brand narrative. Long-form blog content established thought leadership, podcast interviews brought in industry experts, and video content showcased products and manufacturing processes in action.",
+        typography: {
+          fontImage: "/assets/imgs/portfolio/detail/shape.png",
+          styles: [
+            { type: "regular", text: "Educational Articles" },
+            { type: "medium", text: "Expert Interviews" },
+            { type: "semibold", text: "Behind-the-Scenes" },
+            { type: "bold", text: "Sustainability Reports" },
+          ],
+        },
+      },
+    ],
+    gallery: {
+      split: [
+        {
+          image: "/portfolio/ecostyle/g1.png",
+          alt: "Blog Content Strategy",
+        },
+        {
+          image: "/portfolio/ecostyle/g2.png",
+          alt: "Podcast Series Branding",
+        },
+      ],
+      fullWidth: {
+        image: "/portfolio/ecostyle/g3.png",
+        alt: "Content Marketing Ecosystem Overview",
+      },
+      conclusion: {
+        images: [
+          {
+            image: "/portfolio/ecostyle/g4.png",
+            alt: "Content Performance Analytics",
+          },
+          {
+            image: "/portfolio/ecostyle/g5.png",
+            alt: "Audience Growth Dashboard",
+          },
+        ],
+        text: "Our content marketing strategy helped EcoStyle build a loyal community of eco-conscious consumers who value both style and sustainability. By producing consistent, high-quality content across multiple channels, we increased website traffic by 78%, improved average time on site by 3.5 minutes, and helped position EcoStyle as a thought leader in sustainable fashion.",
+      },
+    },
+    stats: {
+      metrics: [
+        { label: "Organic Traffic Growth", value: "78%" },
+        { label: "Time on Site Increase", value: "3.5 min" },
+        { label: "Newsletter Subscription", value: "+12K" },
+      ],
+    },
+    technologies: [
+      "WordPress",
+      "Spotify for Podcasters",
+      "YouTube",
+      "Mailchimp",
+      "SEMrush",
+      "Ahrefs",
+      "Google Analytics",
+    ],
+    navigation: {
+      prev: {
+        link: "/portfolio/nutriboost-campaign",
+        text: "Previous Project",
+      },
+      next: {
+        link: "/portfolio/techvision-seo",
+        text: "Next Project",
+      },
+    },
+  },
+  "techvision-seo": {
+    id: 3,
+    title: "TechVision SEO & PPC Strategy",
+    headerInfo: {
+      category: {
+        name: "Search Marketing",
+        link: "https://techvision.com/",
+      },
+      client: "TechVision Solutions",
+      startDate: "May 2023",
+      handover: "December 2023",
+    },
+    mainImage: "/portfolio/techvision/main.png",
+    sections: [
+      {
+        title: "Comprehensive Search Marketing Overhaul",
+        description:
+          "TechVision Solutions needed to improve their visibility in search results and generate more qualified leads for their enterprise software solutions. We implemented a dual-strategy approach combining technical SEO optimization with targeted PPC campaigns, resulting in dramatically improved search performance and lead generation.",
+        features: [
+          "Technical SEO Audit & Fixes",
+          "Content Gap Analysis",
+          "Keyword Strategy Development",
+          "PPC Campaign Structure",
+          "Conversion Rate Optimization",
+        ],
+      },
+      {
+        title: "Data-Driven Optimization Process",
+        description:
+          "We implemented a systematic, data-driven approach to search marketing that continuously improved performance. Our monthly optimization cycle included performance analysis, A/B testing, and strategic adjustments to both organic content and paid campaigns to maximize ROI.",
+        typography: {
+          fontImage: "/assets/imgs/portfolio/detail/shape.png",
+          styles: [
+            { type: "regular", text: "Keyword Research" },
+            { type: "medium", text: "Campaign Structure" },
+            { type: "semibold", text: "Performance Analysis" },
+            { type: "bold", text: "Conversion Optimization" },
+          ],
+        },
+      },
+    ],
+    gallery: {
+      split: [
+        {
+          image: "/portfolio/techvision/g1.png",
+          alt: "SEO Performance Dashboard",
+        },
+        {
+          image: "/portfolio/techvision/g2.png",
+          alt: "PPC Campaign Structure",
+        },
+      ],
+      fullWidth: {
+        image: "/portfolio/techvision/g3.png",
+        alt: "Search Marketing Strategy Overview",
+      },
+      conclusion: {
+        images: [
+          {
+            image: "/portfolio/techvision/g4.png",
+            alt: "Organic Traffic Growth",
+          },
+          {
+            image: "/portfolio/techvision/g5.png",
+            alt: "Conversion Funnel Analysis",
+          },
+        ],
+        text: "Our comprehensive search marketing strategy helped TechVision achieve a 156% increase in organic traffic, a 42% reduction in cost-per-acquisition for paid campaigns, and a 68% increase in qualified leads. By aligning organic and paid search efforts, we created a cohesive search presence that maximized visibility and conversions.",
+      },
+    },
+    stats: {
+      metrics: [
+        { label: "Organic Traffic Growth", value: "156%" },
+        { label: "CPA Reduction", value: "42%" },
+        { label: "Qualified Lead Increase", value: "68%" },
+      ],
+    },
+    technologies: [
+      "Google Search Console",
+      "Google Analytics",
+      "Google Ads",
+      "Ahrefs",
+      "SEMrush",
+      "Screaming Frog",
+      "Unbounce",
+    ],
+    navigation: {
+      prev: {
+        link: "/portfolio/ecostyle-content",
+        text: "Previous Project",
+      },
+      next: {
+        link: "/portfolio/urbanescape-email",
+        text: "Next Project",
+      },
+    },
+  },
+  "urbanescape-email": {
+    id: 4,
+    title: "Urban Escape Email Marketing Campaign",
+    headerInfo: {
+      category: {
+        name: "Email Marketing",
+        link: "https://urbanescape.com/",
+      },
+      client: "Urban Escape Hotels",
+      startDate: "November 2023",
+      handover: "March 2024",
+    },
+    mainImage: "/portfolio/urbanescape/main.png",
+    sections: [
+      {
+        title: "Personalized Email Marketing Strategy",
+        description:
+          "Urban Escape Hotels wanted to increase direct bookings and customer loyalty through more effective email communications. We developed a segmented, automated email marketing strategy that delivered personalized content based on customer behavior, preferences, and booking history, resulting in significantly improved engagement and conversion rates.",
+        features: [
+          "Customer Segmentation Strategy",
+          "Automated Email Workflows",
+          "Personalized Content Creation",
+          "A/B Testing Framework",
+          "Performance Analytics & Reporting",
+        ],
+      },
+      {
+        title: "Customer Journey Email Framework",
+        description:
+          "We mapped the entire customer journey and created targeted email sequences for each stage, from initial interest to post-stay follow-up. Through dynamic content and strategic timing, we delivered relevant information and offers that drove booking decisions and encouraged repeat visits.",
+        typography: {
+          fontImage: "/assets/imgs/portfolio/detail/shape.png",
+          styles: [
+            { type: "regular", text: "Welcome Series" },
+            { type: "medium", text: "Booking Reminders" },
+            { type: "semibold", text: "Stay Enhancement" },
+            { type: "bold", text: "Re-engagement Campaigns" },
+          ],
+        },
+      },
+    ],
+    gallery: {
+      split: [
+        {
+          image: "/portfolio/urbanescape/g1.png",
+          alt: "Email Template Design System",
+        },
+        {
+          image: "/portfolio/urbanescape/g2.png",
+          alt: "Automation Workflow Structure",
+        },
+      ],
+      fullWidth: {
+        image: "/portfolio/urbanescape/g3.png",
+        alt: "Email Marketing Campaign Overview",
+      },
+      conclusion: {
+        images: [
+          {
+            image: "/portfolio/urbanescape/g4.png",
+            alt: "Email Performance Metrics",
+          },
+          {
+            image: "/portfolio/urbanescape/g5.png",
+            alt: "Conversion Analytics Dashboard",
+          },
+        ],
+        text: "Our email marketing strategy transformed Urban Escape's customer communications from generic mass emails to highly personalized, relevant content that drove business results. The campaign achieved a 52% open rate (industry average: 18%), 23% click-through rate (industry average: 2.5%), and generated a 38% increase in direct bookings, demonstrating the power of strategic segmentation and personalization.",
+      },
+    },
+    stats: {
+      metrics: [
+        { label: "Open Rate", value: "52%" },
+        { label: "Click-through Rate", value: "23%" },
+        { label: "Direct Booking Increase", value: "38%" },
+      ],
+    },
+    technologies: [
+      "Mailchimp",
+      "HubSpot",
+      "ActiveCampaign",
+      "Litmus",
+      "Google Analytics",
+      "Hotel PMS Integration",
+    ],
+    navigation: {
+      prev: {
+        link: "/portfolio/techvision-seo",
+        text: "Previous Project",
+      },
+      next: {
+        link: "/portfolio/nutriboost-campaign",
+        text: "Next Project",
+      },
+    },
+  },
+};
+
 export const getPortfolioDetail = (slug) => portfolioDetails[slug];
+export const getDigitalMarketingDetail = (slug) =>
+  digitalMarketingDetails[slug];
 export const getAllPortfolioSlugs = () => [
-  ...Object.keys(portfolioDetails),
+  ...Object.keys(portfolioDetails, digitalMarketingDetails),
   ...portfolioSlides.map((slide) => slide.slug),
+  ...DigitalMarketingSlides.map((slide) => slide.slug),
 ];

@@ -13,9 +13,8 @@ import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 import animationCharCome from "@/lib/utils/animationCharCome";
-import { portfolioSlides } from "@/data/portfolio";
 
-const PortfolioElementV4 = () => {
+const PortfolioElementV4 = ({ title, description, portfolio }) => {
   const charAnim = useRef();
   useEffect(() => {
     animationCharCome(charAnim.current);
@@ -28,17 +27,13 @@ const PortfolioElementV4 = () => {
             <div className='col-xxl-8 col-xl-7 col-lg-6 col-md-6'>
               <div className='sec-title-wrapper'>
                 <h2 className='sec-title-2 animation__char_come' ref={charAnim}>
-                  Awesome <br />
-                  Projects
+                  {title}
                 </h2>
               </div>
             </div>
             <div className='col-xxl-4 col-xl-5 col-lg-6 col-md-6'>
               <div className='blog__text'>
-                <p>
-                  Crafting new bright brands, unique visual systems and digital
-                  experience focused on a wide range of original collabs.{" "}
-                </p>
+                <p>{description}</p>
               </div>
             </div>
           </div>
@@ -60,7 +55,7 @@ const PortfolioElementV4 = () => {
                 pagination={{ el: ".swiper-pagination", type: "fraction" }}
               >
                 <div className='swiper-wrapper'>
-                  {portfolioSlides.map((slide) => (
+                  {portfolio.map((slide) => (
                     <SwiperSlide key={slide.id}>
                       <div className='portfolio__slide-3'>
                         <Link href={`/portfolio/${slide.slug}`}>

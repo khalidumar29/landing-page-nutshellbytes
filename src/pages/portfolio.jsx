@@ -2,6 +2,7 @@ import Head from "next/head";
 import RootLayout from "@/components/common/layout/RootLayout";
 import PortfolioElementV4 from "@/components/portfolio/PortfolioElementV4";
 import PortfolioV2CTA from "@/components/cta/PortfolioV2CTA";
+import { digitalMarketingSlides, portfolioSlides } from "@/data/portfolio";
 
 const PortfolioV4Dark = () => {
   return (
@@ -16,7 +17,20 @@ const PortfolioV4Dark = () => {
       </Head>
       <main>
         <RootLayout header='header1' footer='footer1' defaultMode='dark'>
-          <PortfolioElementV4 />
+          <PortfolioElementV4
+            title={"Awesome Projects"}
+            description={
+              "Crafting new bright brands, unique visual systems and digital experience focused on a wide range of original collabs."
+            }
+            portfolio={portfolioSlides}
+          />
+          <PortfolioElementV4
+            title='Digital Marketing'
+            description={
+              " Digital marketing is the component of marketing that utilizes internet and online based digital technologies such as desktop computers, mobile phones and other digital media and platforms to promote products and services."
+            }
+            portfolio={digitalMarketingSlides}
+          />
           <PortfolioV2CTA />
         </RootLayout>
       </main>
