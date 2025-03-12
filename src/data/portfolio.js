@@ -436,21 +436,22 @@ export const portfolioDetails = {
 export const digitalMarketingSlides = [
   {
     id: 1,
-    title: "NutriBoost",
-    type: "Social Media Campaign",
-    year: "2023",
-    image: "/portfolio/foresee/home.png",
-    slug: "nutriboost-campaign",
+    title: "FitFuel Social Boost",
+    type: "Social Media Growth",
+    year: "2024",
+    image: "/portfolio/fitfuel/home.png",
+    slug: "fitfuel-social-growth",
     headerInfo: {
       category: {
-        name: "Social Media Campaign",
-        link: "/category/social-media",
+        name: "Social Media Growth",
+        link: "/category/social-media-growth",
       },
-      client: "NutriBoost Health Foods",
-      startDate: "March 2023",
-      handover: "August 2023",
+      client: "FitFuel Nutrition",
+      startDate: "January 2024",
+      handover: "June 2024",
     },
   },
+  ,
   {
     id: 2,
     title: "EcoStyle",
@@ -506,43 +507,43 @@ export const digitalMarketingSlides = [
 ];
 
 export const digitalMarketingDetails = {
-  "nutriboost-campaign": {
+  "fitfuel-social-growth": {
     id: 1,
-    title: "NutriBoost Social Media Campaign",
+    title: "FitFuel Social Media Growth Strategy",
     headerInfo: {
       category: {
-        name: "Social Media Marketing",
-        link: "https://nutriboost.com/",
+        name: "Social Media Growth",
+        link: "#",
       },
-      client: "NutriBoost Health Foods",
-      startDate: "March 2023",
-      handover: "August 2023",
+      client: "FitFuel Nutrition",
+      startDate: "January 2024",
+      handover: "June 2024",
     },
-    mainImage: "/portfolio/nutriboost/main.png",
+    mainImage: "/portfolio/fitfuel/main.png",
     sections: [
       {
-        title: "Comprehensive Social Media Strategy",
+        title: "Revamping FitFuel’s Digital Presence",
         description:
-          "NutriBoost needed to increase brand awareness and drive sales for their new line of plant-based protein products. We developed a multi-platform social media campaign that showcased their products through compelling storytelling, influencer partnerships, and interactive content formats, resulting in significant growth in engagement and sales.",
+          "FitFuel Nutrition, a growing brand in the health and wellness sector, struggled to gain traction on social media despite having quality products. Our goal was to increase their follower count, engagement rate, and brand trust across Instagram, TikTok, and Twitter.",
         features: [
-          "Platform-Specific Content Strategy",
-          "Influencer Collaborations",
-          "User-Generated Content Campaigns",
-          "Interactive Stories & Reels",
-          "Community Management & Engagement",
+          "Strategic Audience Targeting",
+          "Platform-Specific Content Creation",
+          "Influencer & Community Collaboration",
+          "Paid & Organic Growth Strategy",
+          "Data-Driven Engagement Optimization",
         ],
       },
       {
-        title: "Visual Identity & Content Creation",
+        title: "Content Strategy & Engagement Boost",
         description:
-          "We created a cohesive visual language that strengthened NutriBoost's brand recognition across platforms while maintaining platform-specific best practices. Our content mix included lifestyle photography, recipe videos, workout tips, and educational content about plant-based nutrition to establish the brand as an authority in the health space.",
+          "We developed a content mix that aligned with FitFuel’s brand mission, incorporating educational content, engaging fitness challenges, and influencer collaborations. We leveraged short-form video content, carousels, and interactive Q&A sessions to keep the audience engaged.",
         typography: {
           fontImage: "/assets/imgs/portfolio/detail/shape.png",
           styles: [
-            { type: "regular", text: "Lifestyle Content" },
-            { type: "medium", text: "Product Showcases" },
-            { type: "semibold", text: "Educational Series" },
-            { type: "bold", text: "Influencer Takeovers" },
+            { type: "regular", text: "Nutrition Tips" },
+            { type: "medium", text: "Workout Challenges" },
+            { type: "semibold", text: "Influencer Partnerships" },
+            { type: "bold", text: "Community Spotlights" },
           ],
         },
       },
@@ -550,47 +551,47 @@ export const digitalMarketingDetails = {
     gallery: {
       split: [
         {
-          image: "/portfolio/nutriboost/g1.png",
-          alt: "Instagram Feed Strategy",
+          image: "/portfolio/fitfuel/g1.png",
+          alt: "Instagram Growth Metrics",
         },
         {
-          image: "/portfolio/nutriboost/g2.png",
-          alt: "TikTok Campaign Visuals",
+          image: "/portfolio/fitfuel/g2.png",
+          alt: "TikTok Viral Campaign",
         },
       ],
       fullWidth: {
-        image: "/portfolio/nutriboost/g3.png",
-        alt: "Cross-Platform Campaign Overview",
+        image: "/portfolio/fitfuel/g3.png",
+        alt: "Multi-Platform Strategy Overview",
       },
       conclusion: {
         images: [
           {
-            image: "/portfolio/nutriboost/g4.png",
+            image: "/portfolio/fitfuel/g4.png",
             alt: "Engagement Metrics Dashboard",
           },
           {
-            image: "/portfolio/nutriboost/g5.png",
-            alt: "Influencer Collaboration Results",
+            image: "/portfolio/fitfuel/g5.png",
+            alt: "Influencer Collaboration Performance",
           },
         ],
-        text: "The NutriBoost social media campaign transformed the brand's digital presence, resulting in a 215% increase in engagement, 45% growth in follower count, and a 32% increase in direct sales from social channels. By combining strategic platform selection with compelling content, we helped NutriBoost connect with their target audience in meaningful ways.",
+        text: "The FitFuel social media campaign led to outstanding results, including a 180% increase in Instagram engagement, 60K new followers across platforms, and a 28% rise in direct sales via social media. By leveraging high-quality content, interactive community engagement, and a mix of paid and organic strategies, we positioned FitFuel as a top nutrition brand in the digital space.",
       },
     },
     stats: {
       metrics: [
-        { label: "Engagement Increase", value: "215%" },
-        { label: "Follower Growth", value: "45%" },
-        { label: "Sales Conversion", value: "32%" },
+        { label: "Engagement Growth", value: "180%" },
+        { label: "New Followers Gained", value: "60K" },
+        { label: "Direct Sales Increase", value: "28%" },
       ],
     },
     technologies: [
       "Instagram",
       "TikTok",
-      "Facebook",
-      "Pinterest",
-      "Sprout Social",
+      "Twitter",
+      "Hootsuite",
       "Canva Pro",
-      "Adobe Creative Suite",
+      "Meta Ads Manager",
+      "Google Analytics",
     ],
     navigation: {
       prev: {

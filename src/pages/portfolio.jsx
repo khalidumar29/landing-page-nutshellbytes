@@ -18,7 +18,7 @@ const PortfolioV4Dark = () => {
       <main>
         <RootLayout header='header1' footer='footer1' defaultMode='dark'>
           <PortfolioElementV4
-            title={"Awesome Projects"}
+            title={"Web Design & Development"}
             description={
               "Crafting new bright brands, unique visual systems and digital experience focused on a wide range of original collabs."
             }
