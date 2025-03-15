@@ -38,28 +38,28 @@ export default function Footer3() {
                     </p>
                     <ul className='footer__social'>
                       <li>
-                        <a href='#'>
+                        <a href='https://www.facebook.com/profile.php?id=61574246814620'>
                           <span>
                             <i className='fa-brands fa-facebook-f'></i>
                           </span>
                         </a>
                       </li>
-                      <li>
+                      {/* <li>
                         <a href='#'>
                           <span>
                             <i className='fa-brands fa-twitter'></i>
                           </span>
                         </a>
-                      </li>
-                      <li>
+                      </li> */}
+                      {/* <li>
                         <a href='#'>
                           <span>
                             <i className='fa-brands fa-instagram'></i>
                           </span>
                         </a>
-                      </li>
+                      </li> */}
                       <li>
-                        <a href='#'>
+                        <a href='https://www.linkedin.com/company/nutshellbytes'>
                           <span>
                             <i className='fa-brands fa-linkedin'></i>
                           </span>
@@ -89,15 +89,15 @@ export default function Footer3() {
                   <div className='footer__widget-3'>
                     <h2 className='footer__widget-title'>Contact Us</h2>
                     <ul className='footer__contact'>
-                      <li>Valentin, Street Road 24, New York, USA - 67452</li>
+                      <li>Dhaka, Bangladesh</li>
                       <li>
                         <a href='tel:02574328301' className='phone'>
-                          (+02) 574 - 328 - 301{" "}
+                          +8801779115089
                         </a>
                       </li>
                       <li>
-                        <a href='mailto:info@buildyexample.com'>
-                          info@buildyexample.com
+                        <a href='mailto:info@nutshellbytes.com'>
+                          info@nutshellbytes.com
                         </a>
                       </li>
                     </ul>
@@ -123,8 +123,8 @@ export default function Footer3() {
                   <div className='footer__copyright'>
                     <p>
                       © 2022 - 2025 | Alrights reserved by{" "}
-                      <a href='https://wealcoder.com/' target='_blank'>
-                        Wealcoder
+                      <a href='https://nutshellbytes.com/' target='_blank'>
+                        Nutshell Bytes
                       </a>
                     </p>
                   </div>

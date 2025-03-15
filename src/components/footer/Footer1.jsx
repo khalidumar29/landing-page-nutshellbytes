@@ -142,17 +142,21 @@ export default function Footer1() {
             <div className='footer__social-3'>
               <ul>
                 <li>
-                  <a href='#'>facebook</a>
+                  <a href='https://www.facebook.com/profile.php?id=61574246814620'>
+                    facebook
+                  </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href='#'>Twitter</a>
-                </li>
+                </li> */}
                 <li>
-                  <a href='#'>Linkedin</a>
+                  <a href='https://www.linkedin.com/company/nutshellbytes'>
+                    Linkedin
+                  </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href='#'>Instagram</a>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className='footer__contact-3'>
@@ -170,8 +174,8 @@ export default function Footer1() {
                 <div className='footer__copyright-3'>
                   <p>
                     © 2022 - 2025 | Alrights reserved by{" "}
-                    <a href='https://wealcoder.com/' target='_blank'>
-                      Wealcoder
+                    <a href='https://nutshellbytes.com/' target='_blank'>
+                      Nutshell Bytes
                     </a>
                   </p>
                 </div>

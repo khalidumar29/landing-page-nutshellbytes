@@ -68,18 +68,22 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
             <div className='offcanvas__social'>
               <h3 className='social-title'>Follow Us</h3>
               <ul>
-                <li>
+                {/* <li>
                   <a href='#'>Instagram</a>
+                </li> */}
+                <li>
+                  <a href='https://www.facebook.com/profile.php?id=61574246814620'>
+                    Facebook
+                  </a>
                 </li>
                 <li>
-                  <a href='#'>Facebook</a>
+                  <a href='https://www.linkedin.com/company/nutshellbytes'>
+                    Linkedin
+                  </a>
                 </li>
-                <li>
-                  <a href='#'>Twitter</a>
-                </li>
-                <li>
+                {/* <li>
                   <a href='#'>YouTube</a>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className='offcanvas__links'>
@@ -139,12 +143,14 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
               <h3>Get in touch</h3>
               <ul>
                 <li>
-                  <a href='tel:02094980547'>+(02) - 094 980 547</a>
+                  <a href='tel:02094980547'>01779-115089</a>
                 </li>
                 <li>
-                  <a href='mailto:info@extradesign.com'>info@extradesign.com</a>
+                  <a href='mailto:info@nutshellbytes.com'>
+                    info@nutshellbytes.com
+                  </a>
                 </li>
-                <li>230 Norman Street New York, QC (USA) H8R 1A1</li>
+                <li>Dhaka, Bangladesh</li>
               </ul>
             </div>
             <Image
