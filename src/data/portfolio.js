@@ -577,11 +577,11 @@ export const digitalMarketingDetails = {
     ],
     navigation: {
       prev: {
-        link: "/portfolio/urbanescape-email",
+        link: "/portfolio/lushglow-social-audit",
         text: "Previous Project",
       },
       next: {
-        link: "/portfolio/ecostyle-content",
+        link: "/portfolio/peakgear-ppc-growth",
         text: "Next Project",
       },
     },
@@ -674,11 +674,11 @@ export const digitalMarketingDetails = {
     ],
     navigation: {
       prev: {
-        link: "/portfolio/ecostyle-content",
+        link: "/portfolio/fitfuel-social-growth",
         text: "Previous Project",
       },
       next: {
-        link: "/portfolio/fitfuel-social-growth",
+        link: "/portfolio/lushglow-social-audit",
         text: "Next Project",
       },
     },
