@@ -437,9 +437,9 @@ export const digitalMarketingSlides = [
   {
     id: 1,
     title: "FitFuel Social Boost",
-    type: "Social Media Growth",
+    type: "",
     year: "2024",
-    image: "/portfolio/fitfuel/home.png",
+    image: "/portfolio/fitfuel/main.png",
     slug: "fitfuel-social-growth",
     headerInfo: {
       category: {
@@ -454,56 +454,38 @@ export const digitalMarketingSlides = [
   ,
   {
     id: 2,
-    title: "EcoStyle",
-    type: "Content Marketing",
-    year: "2023",
-    image: "/portfolio/foresee/home.png",
-    slug: "ecostyle-content",
+    title: "PeakGear PPC Success",
+    type: "",
+    year: "2024",
+    image: "/portfolio/peak-gear/main.jpg",
+    slug: "peakgear-ppc-growth",
     headerInfo: {
       category: {
-        name: "Content Marketing",
-        link: "/category/content-marketing",
+        name: "Ad Campaign Performance",
+        link: "/category/ad-performance",
       },
-      client: "EcoStyle Apparel",
-      startDate: "January 2023",
-      handover: "June 2023",
+      client: "PeakGear Outdoors",
+      startDate: "February 2024",
+      handover: "July 2024",
     },
   },
   {
     id: 3,
-    title: "TechVision",
-    type: "SEO & PPC",
-    year: "2023",
-    image: "/assets/imgs/portfolio/3/callmi.png",
-    slug: "techvision-seo",
-    headerInfo: {
-      category: {
-        name: "SEO & PPC",
-        link: "/category/seo-ppc",
-      },
-      client: "TechVision Solutions",
-      startDate: "May 2023",
-      handover: "December 2023",
-    },
-  },
-  {
-    id: 4,
-    title: "Urban Escape",
-    type: "Email Marketing",
+    title: "LushGlow Social Revamp",
+    type: "",
     year: "2024",
-    image: "/portfolio/foresee/home.png",
-    slug: "urbanescape-email",
+    image: "/portfolio/lushglow/home.png",
+    slug: "lushglow-social-audit",
     headerInfo: {
       category: {
-        name: "Email Marketing",
-        link: "/category/email-marketing",
+        name: "Brand Strategy & Social Media Audit",
+        link: "/category/social-audit",
       },
-      client: "Urban Escape Hotels",
-      startDate: "November 2023",
-      handover: "March 2024",
+      client: "LushGlow Skincare",
+      startDate: "March 2024",
+      handover: "August 2024",
     },
   },
-  // ...other slides
 ];
 
 export const digitalMarketingDetails = {
@@ -551,11 +533,11 @@ export const digitalMarketingDetails = {
     gallery: {
       split: [
         {
-          image: "/portfolio/fitfuel/g1.png",
+          image: "/portfolio/fitfuel/insta-matric.png",
           alt: "Instagram Growth Metrics",
         },
         {
-          image: "/portfolio/fitfuel/g2.png",
+          image: "/portfolio/fitfuel/tiktok-viral.png",
           alt: "TikTok Viral Campaign",
         },
       ],
@@ -566,11 +548,11 @@ export const digitalMarketingDetails = {
       conclusion: {
         images: [
           {
-            image: "/portfolio/fitfuel/g4.png",
+            image: "/portfolio/fitfuel/engagement-metrics-dashboard.png",
             alt: "Engagement Metrics Dashboard",
           },
           {
-            image: "/portfolio/fitfuel/g5.png",
+            image: "/portfolio/fitfuel/influencer-collaboration.png",
             alt: "Influencer Collaboration Performance",
           },
         ],
@@ -604,43 +586,43 @@ export const digitalMarketingDetails = {
       },
     },
   },
-  "ecostyle-content": {
-    id: 2,
-    title: "EcoStyle Content Marketing Strategy",
+  "peakgear-ppc-growth": {
+    id: 6,
+    title: "PeakGear PPC & Ad Campaign Strategy",
     headerInfo: {
       category: {
-        name: "Content Marketing",
-        link: "https://ecostyle.com/",
+        name: "Ad Campaign Performance",
+        link: "#",
       },
-      client: "EcoStyle Apparel",
-      startDate: "January 2023",
-      handover: "June 2023",
+      client: "PeakGear Outdoors",
+      startDate: "February 2024",
+      handover: "July 2024",
     },
-    mainImage: "/portfolio/ecostyle/main.png",
+    mainImage: "/portfolio/peak-gear/main.jpg",
     sections: [
       {
-        title: "Sustainable Fashion Storytelling",
+        title: "Scaling PeakGear’s Ad Performance",
         description:
-          "EcoStyle needed to position themselves as leaders in sustainable fashion while educating consumers about their eco-friendly practices. We developed a comprehensive content marketing strategy spanning their blog, podcast, and video channels to highlight their commitment to sustainability while showcasing their stylish apparel collections.",
+          "PeakGear Outdoors, a premium outdoor gear brand, wanted to improve its paid advertising efficiency across Facebook Ads, Google Ads, and TikTok. Despite a solid product lineup, their previous campaigns had high acquisition costs and low conversion rates. We took over their ad strategy with a data-driven approach to maximize ROI while lowering costs.",
         features: [
-          "Editorial Calendar Development",
-          "Blog Content Creation",
-          "Podcast Series Production",
-          "Video Content Strategy",
-          "Sustainability Reporting",
+          "Campaign Restructuring & Optimization",
+          "Advanced Audience Segmentation",
+          "Landing Page A/B Testing",
+          "Retargeting & Lookalike Audiences",
+          "Creative Refresh for Higher CTR",
         ],
       },
       {
-        title: "Multi-Channel Content Ecosystem",
+        title: "Strategic Approach & Execution",
         description:
-          "We created an interconnected content ecosystem that leveraged each channel's strengths while maintaining a cohesive brand narrative. Long-form blog content established thought leadership, podcast interviews brought in industry experts, and video content showcased products and manufacturing processes in action.",
+          "We completely overhauled PeakGear's ad campaigns by testing multiple creative variations, refining audience targeting, and introducing a structured retargeting funnel. Our optimizations led to a significant drop in acquisition costs and a sharp increase in ROAS.",
         typography: {
           fontImage: "/assets/imgs/portfolio/detail/shape.png",
           styles: [
-            { type: "regular", text: "Educational Articles" },
-            { type: "medium", text: "Expert Interviews" },
-            { type: "semibold", text: "Behind-the-Scenes" },
-            { type: "bold", text: "Sustainability Reports" },
+            { type: "regular", text: "Video Ads (Reels & Shorts)" },
+            { type: "medium", text: "Carousel & Dynamic Ads" },
+            { type: "semibold", text: "Google Performance Max" },
+            { type: "bold", text: "A/B Testing & Analytics" },
           ],
         },
       },
@@ -648,144 +630,47 @@ export const digitalMarketingDetails = {
     gallery: {
       split: [
         {
-          image: "/portfolio/ecostyle/g1.png",
-          alt: "Blog Content Strategy",
+          image: "/portfolio/peak-gear/g1.png",
+          alt: "Google Ads Campaign Performance",
         },
         {
-          image: "/portfolio/ecostyle/g2.png",
-          alt: "Podcast Series Branding",
+          image: "/portfolio/peak-gear/g2.png",
+          alt: "Facebook Ad Engagement Metrics",
         },
       ],
       fullWidth: {
-        image: "/portfolio/ecostyle/g3.png",
-        alt: "Content Marketing Ecosystem Overview",
+        image: "/portfolio/peak-gear/g3.png",
+        alt: "Multi-Platform Ad Strategy Overview",
       },
       conclusion: {
         images: [
           {
-            image: "/portfolio/ecostyle/g4.png",
-            alt: "Content Performance Analytics",
+            image: "/portfolio/peak-gear/g4.png",
+            alt: "Ad ROAS Growth Dashboard",
           },
           {
-            image: "/portfolio/ecostyle/g5.png",
-            alt: "Audience Growth Dashboard",
+            image: "/portfolio/peak-gear/g5.png",
+            alt: "Conversion Rate Improvement Metrics",
           },
         ],
-        text: "Our content marketing strategy helped EcoStyle build a loyal community of eco-conscious consumers who value both style and sustainability. By producing consistent, high-quality content across multiple channels, we increased website traffic by 78%, improved average time on site by 3.5 minutes, and helped position EcoStyle as a thought leader in sustainable fashion.",
+        text: "Our revamped ad strategy transformed PeakGear’s paid marketing efforts. The campaigns achieved a 5.2x ROAS, a 47% reduction in customer acquisition cost (CAC), and a 31% increase in conversion rates across all platforms. With a structured approach to testing and optimization, we helped PeakGear reach a larger, more engaged audience while maximizing profitability.",
       },
     },
     stats: {
       metrics: [
-        { label: "Organic Traffic Growth", value: "78%" },
-        { label: "Time on Site Increase", value: "3.5 min" },
-        { label: "Newsletter Subscription", value: "+12K" },
+        { label: "Return on Ad Spend (ROAS)", value: "5.2x" },
+        { label: "Customer Acquisition Cost (CAC)", value: "-47%" },
+        { label: "Conversion Rate Increase", value: "31%" },
       ],
     },
     technologies: [
-      "WordPress",
-      "Spotify for Podcasters",
-      "YouTube",
-      "Mailchimp",
-      "SEMrush",
-      "Ahrefs",
-      "Google Analytics",
-    ],
-    navigation: {
-      prev: {
-        link: "/portfolio/nutriboost-campaign",
-        text: "Previous Project",
-      },
-      next: {
-        link: "/portfolio/techvision-seo",
-        text: "Next Project",
-      },
-    },
-  },
-  "techvision-seo": {
-    id: 3,
-    title: "TechVision SEO & PPC Strategy",
-    headerInfo: {
-      category: {
-        name: "Search Marketing",
-        link: "https://techvision.com/",
-      },
-      client: "TechVision Solutions",
-      startDate: "May 2023",
-      handover: "December 2023",
-    },
-    mainImage: "/portfolio/techvision/main.png",
-    sections: [
-      {
-        title: "Comprehensive Search Marketing Overhaul",
-        description:
-          "TechVision Solutions needed to improve their visibility in search results and generate more qualified leads for their enterprise software solutions. We implemented a dual-strategy approach combining technical SEO optimization with targeted PPC campaigns, resulting in dramatically improved search performance and lead generation.",
-        features: [
-          "Technical SEO Audit & Fixes",
-          "Content Gap Analysis",
-          "Keyword Strategy Development",
-          "PPC Campaign Structure",
-          "Conversion Rate Optimization",
-        ],
-      },
-      {
-        title: "Data-Driven Optimization Process",
-        description:
-          "We implemented a systematic, data-driven approach to search marketing that continuously improved performance. Our monthly optimization cycle included performance analysis, A/B testing, and strategic adjustments to both organic content and paid campaigns to maximize ROI.",
-        typography: {
-          fontImage: "/assets/imgs/portfolio/detail/shape.png",
-          styles: [
-            { type: "regular", text: "Keyword Research" },
-            { type: "medium", text: "Campaign Structure" },
-            { type: "semibold", text: "Performance Analysis" },
-            { type: "bold", text: "Conversion Optimization" },
-          ],
-        },
-      },
-    ],
-    gallery: {
-      split: [
-        {
-          image: "/portfolio/techvision/g1.png",
-          alt: "SEO Performance Dashboard",
-        },
-        {
-          image: "/portfolio/techvision/g2.png",
-          alt: "PPC Campaign Structure",
-        },
-      ],
-      fullWidth: {
-        image: "/portfolio/techvision/g3.png",
-        alt: "Search Marketing Strategy Overview",
-      },
-      conclusion: {
-        images: [
-          {
-            image: "/portfolio/techvision/g4.png",
-            alt: "Organic Traffic Growth",
-          },
-          {
-            image: "/portfolio/techvision/g5.png",
-            alt: "Conversion Funnel Analysis",
-          },
-        ],
-        text: "Our comprehensive search marketing strategy helped TechVision achieve a 156% increase in organic traffic, a 42% reduction in cost-per-acquisition for paid campaigns, and a 68% increase in qualified leads. By aligning organic and paid search efforts, we created a cohesive search presence that maximized visibility and conversions.",
-      },
-    },
-    stats: {
-      metrics: [
-        { label: "Organic Traffic Growth", value: "156%" },
-        { label: "CPA Reduction", value: "42%" },
-        { label: "Qualified Lead Increase", value: "68%" },
-      ],
-    },
-    technologies: [
-      "Google Search Console",
-      "Google Analytics",
+      "Facebook Ads Manager",
       "Google Ads",
-      "Ahrefs",
-      "SEMrush",
-      "Screaming Frog",
+      "TikTok Ads",
+      "Google Analytics",
+      "Meta Business Suite",
       "Unbounce",
+      "Klaviyo",
     ],
     navigation: {
       prev: {
@@ -793,48 +678,48 @@ export const digitalMarketingDetails = {
         text: "Previous Project",
       },
       next: {
-        link: "/portfolio/urbanescape-email",
+        link: "/portfolio/fitfuel-social-growth",
         text: "Next Project",
       },
     },
   },
-  "urbanescape-email": {
-    id: 4,
-    title: "Urban Escape Email Marketing Campaign",
+  "lushglow-social-audit": {
+    id: 3,
+    title: "LushGlow Skincare Social Media Audit & Brand Strategy",
     headerInfo: {
       category: {
-        name: "Email Marketing",
-        link: "https://urbanescape.com/",
+        name: "Brand Strategy & Social Media Audit",
+        link: "#",
       },
-      client: "Urban Escape Hotels",
-      startDate: "November 2023",
-      handover: "March 2024",
+      client: "LushGlow Skincare",
+      startDate: "March 2024",
+      handover: "August 2024",
     },
-    mainImage: "/portfolio/urbanescape/main.png",
+    mainImage: "/portfolio/lushglow/main.png",
     sections: [
       {
-        title: "Personalized Email Marketing Strategy",
+        title: "Rebuilding LushGlow’s Digital Brand Presence",
         description:
-          "Urban Escape Hotels wanted to increase direct bookings and customer loyalty through more effective email communications. We developed a segmented, automated email marketing strategy that delivered personalized content based on customer behavior, preferences, and booking history, resulting in significantly improved engagement and conversion rates.",
+          "LushGlow Skincare, an emerging clean beauty brand, was struggling with inconsistent branding, low engagement, and ineffective social media messaging. We conducted an in-depth audit of their social media presence and developed a brand strategy that aligned with their target audience’s expectations while improving engagement and sales.",
         features: [
-          "Customer Segmentation Strategy",
-          "Automated Email Workflows",
-          "Personalized Content Creation",
-          "A/B Testing Framework",
-          "Performance Analytics & Reporting",
+          "Social Media Performance Analysis",
+          "Competitor Benchmarking",
+          "Brand Messaging & Positioning",
+          "Content Pillar Development",
+          "Engagement & Community Strategy",
         ],
       },
       {
-        title: "Customer Journey Email Framework",
+        title: "Audit Insights & Key Improvements",
         description:
-          "We mapped the entire customer journey and created targeted email sequences for each stage, from initial interest to post-stay follow-up. Through dynamic content and strategic timing, we delivered relevant information and offers that drove booking decisions and encouraged repeat visits.",
+          "Our audit revealed gaps in content consistency, audience engagement, and brand storytelling. By redefining LushGlow’s brand voice, optimizing content formats, and enhancing community engagement efforts, we repositioned them as a go-to clean beauty brand for millennials and Gen Z audiences.",
         typography: {
           fontImage: "/assets/imgs/portfolio/detail/shape.png",
           styles: [
-            { type: "regular", text: "Welcome Series" },
-            { type: "medium", text: "Booking Reminders" },
-            { type: "semibold", text: "Stay Enhancement" },
-            { type: "bold", text: "Re-engagement Campaigns" },
+            { type: "regular", text: "Brand Tone Refinement" },
+            { type: "medium", text: "Content Strategy Realignment" },
+            { type: "semibold", text: "User-Generated Content Focus" },
+            { type: "bold", text: "Engagement Playbook" },
           ],
         },
       },
@@ -842,54 +727,55 @@ export const digitalMarketingDetails = {
     gallery: {
       split: [
         {
-          image: "/portfolio/urbanescape/g1.png",
-          alt: "Email Template Design System",
+          image: "/portfolio/lushglow/g1.png",
+          alt: "Social Media Audit Dashboard",
         },
         {
-          image: "/portfolio/urbanescape/g2.png",
-          alt: "Automation Workflow Structure",
+          image: "/portfolio/lushglow/g2.png",
+          alt: "Brand Identity Realignment",
         },
       ],
       fullWidth: {
-        image: "/portfolio/urbanescape/g3.png",
-        alt: "Email Marketing Campaign Overview",
+        image: "/portfolio/lushglow/g3.png",
+        alt: "New Social Media Strategy Overview",
       },
       conclusion: {
         images: [
           {
-            image: "/portfolio/urbanescape/g4.png",
-            alt: "Email Performance Metrics",
+            image: "/portfolio/lushglow/g4.png",
+            alt: "Engagement Rate Improvement",
           },
           {
-            image: "/portfolio/urbanescape/g5.png",
-            alt: "Conversion Analytics Dashboard",
+            image: "/portfolio/lushglow/g5.png",
+            alt: "Customer Sentiment Analysis",
           },
         ],
-        text: "Our email marketing strategy transformed Urban Escape's customer communications from generic mass emails to highly personalized, relevant content that drove business results. The campaign achieved a 52% open rate (industry average: 18%), 23% click-through rate (industry average: 2.5%), and generated a 38% increase in direct bookings, demonstrating the power of strategic segmentation and personalization.",
+        text: "Our strategic overhaul resulted in a 120% increase in social media engagement, a 55% boost in audience growth, and a 22% increase in website traffic from social platforms. By fine-tuning LushGlow’s brand messaging and implementing a robust community engagement strategy, we helped establish them as a trusted name in the clean beauty space.",
       },
     },
     stats: {
       metrics: [
-        { label: "Open Rate", value: "52%" },
-        { label: "Click-through Rate", value: "23%" },
-        { label: "Direct Booking Increase", value: "38%" },
+        { label: "Engagement Growth", value: "120%" },
+        { label: "New Audience Reach", value: "55%" },
+        { label: "Website Traffic Increase", value: "22%" },
       ],
     },
     technologies: [
-      "Mailchimp",
-      "HubSpot",
-      "ActiveCampaign",
-      "Litmus",
+      "Instagram Insights",
+      "Facebook Analytics",
+      "Hootsuite",
+      "Brandwatch",
+      "Canva Pro",
+      "Sprout Social",
       "Google Analytics",
-      "Hotel PMS Integration",
     ],
     navigation: {
       prev: {
-        link: "/portfolio/techvision-seo",
+        link: "/portfolio/peakgear-ppc-growth",
         text: "Previous Project",
       },
       next: {
-        link: "/portfolio/nutriboost-campaign",
+        link: "/portfolio/fitfuel-social-growth",
         text: "Next Project",
       },
     },
