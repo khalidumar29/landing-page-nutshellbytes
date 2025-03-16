@@ -9,21 +9,24 @@ const Contact1 = () => {
     animationCharCome(charAnim.current);
     animationWordCome(wordAnim.current);
   }, []);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <>
-      <section className="contact__area-6">
-        <div className="container g-0 line pt-120 pb-110">
-          <span className="line-3"></span>
-          <div className="row">
-            <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-              <div className="sec-title-wrapper">
-                <h2 className="sec-title-2 animation__char_come" ref={charAnim}>
+      <section className='contact__area-6'>
+        <div className='container g-0 line pt-120 pb-110'>
+          <span className='line-3'></span>
+          <div className='row'>
+            <div className='col-xxl-6 col-xl-6 col-lg-6 col-md-6'>
+              <div className='sec-title-wrapper'>
+                <h2 className='sec-title-2 animation__char_come' ref={charAnim}>
                   Let’s get in touch
                 </h2>
               </div>
             </div>
-            <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-              <div className="contact__text">
+            <div className='col-xxl-6 col-xl-6 col-lg-6 col-md-6'>
+              <div className='contact__text'>
                 <p>
                   {
                     "Great! We're excited to hear from you and let's start something special togerter. call us for any inquery."
@@ -32,11 +35,11 @@ const Contact1 = () => {
               </div>
             </div>
           </div>
-          <div className="row contact__btm">
-            <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
-              <div className="contact__info">
+          <div className='row contact__btm'>
+            <div className='col-xxl-5 col-xl-5 col-lg-5 col-md-5'>
+              <div className='contact__info'>
                 <h3
-                  className="sub-title-anim-top animation__word_come"
+                  className='sub-title-anim-top animation__word_come'
                   ref={wordAnim}
                 >
                   {"Don't be afraid man ! "}
@@ -45,10 +48,10 @@ const Contact1 = () => {
                 </h3>
                 <ul>
                   <li>
-                    <a href="tel:+(2)578365379">+(2) 578 - 365 - 379</a>
+                    <a href='tel:+(2)578365379'>+(2) 578 - 365 - 379</a>
                   </li>
                   <li>
-                    <a href="mailto:hello@example.com">hello@example.com</a>
+                    <a href='mailto:hello@example.com'>hello@example.com</a>
                   </li>
                   <li>
                     <span>
@@ -58,43 +61,43 @@ const Contact1 = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
-              <div className="contact__form">
-                <form action="assets/mail.php" method="POST">
-                  <div className="row g-3">
-                    <div className="col-xxl-6 col-xl-6 col-12">
-                      <input type="text" name="name" placeholder="Name *" />
+            <div className='col-xxl-7 col-xl-7 col-lg-7 col-md-7'>
+              <div className='contact__form'>
+                <form handleSubmit={handleSubmit}>
+                  <div className='row g-3'>
+                    <div className='col-xxl-6 col-xl-6 col-12'>
+                      <input type='text' name='name' placeholder='Name *' />
                     </div>
-                    <div className="col-xxl-6 col-xl-6 col-12">
-                      <input type="email" name="email" placeholder="Email *" />
+                    <div className='col-xxl-6 col-xl-6 col-12'>
+                      <input type='email' name='email' placeholder='Email *' />
                     </div>
                   </div>
-                  <div className="row g-3">
-                    <div className="col-xxl-6 col-xl-6 col-12">
-                      <input type="tel" name="phone" placeholder="Phone" />
+                  <div className='row g-3'>
+                    <div className='col-xxl-6 col-xl-6 col-12'>
+                      <input type='tel' name='phone' placeholder='Phone' />
                     </div>
-                    <div className="col-xxl-6 col-xl-6 col-12">
+                    <div className='col-xxl-6 col-xl-6 col-12'>
                       <input
-                        type="text"
-                        name="subject"
-                        placeholder="Subject *"
+                        type='text'
+                        name='subject'
+                        placeholder='Subject *'
                       />
                     </div>
                   </div>
-                  <div className="row g-3">
-                    <div className="col-12">
+                  <div className='row g-3'>
+                    <div className='col-12'>
                       <textarea
-                        name="message"
-                        placeholder="Messages *"
+                        name='message'
+                        placeholder='Messages *'
                       ></textarea>
                     </div>
                   </div>
-                  <div className="row g-3">
-                    <div className="col-12">
-                      <div className="btn_wrapper">
-                        <button className="wc-btn-primary btn-hover btn-item">
+                  <div className='row g-3'>
+                    <div className='col-12'>
+                      <div className='btn_wrapper'>
+                        <button className='wc-btn-primary btn-hover btn-item'>
                           <span></span> Send <br />
-                          Messages <i className="fa-solid fa-arrow-right"></i>
+                          Messages <i className='fa-solid fa-arrow-right'></i>
                         </button>
                       </div>
                     </div>
