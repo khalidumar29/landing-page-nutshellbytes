@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Main sitemap
+Sitemap: https://nutshellbytes.com/sitemap.xml
+
+# N8N subdomain sitemap  
+Sitemap: https://n8n.nutshellbytes.com/sitemap.xml
+
+# Block common crawlers from unnecessary paths
+User-agent: *
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Disallow: /private/
+
+# Allow search engines to crawl important pages
+Allow: /
+Allow: /about
+Allow: /services
+Allow: /portfolio
+Allow: /contact
+Allow: /n8n
+
+# Crawl delay (optional)
+Crawl-delay: 1
