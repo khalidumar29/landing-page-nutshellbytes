@@ -459,7 +459,7 @@ const N8NPage = () => {
                       E-commerce Agent
                     </p>
                     <p className='text-black/60 text-xs'>
-                      Order to fulfillment automation
+                      Complete order processing automation
                     </p>
                   </div>
                 </div>
@@ -473,7 +473,7 @@ const N8NPage = () => {
                       Lead Gen Agent
                     </p>
                     <p className='text-black/60 text-xs'>
-                      Multi-channel lead capture
+                      Smart lead capture & nurturing
                     </p>
                   </div>
                 </div>
@@ -487,7 +487,7 @@ const N8NPage = () => {
                       Support Agent
                     </p>
                     <p className='text-black/60 text-xs'>
-                      Automated ticket routing
+                      Intelligent ticket management
                     </p>
                   </div>
                 </div>
