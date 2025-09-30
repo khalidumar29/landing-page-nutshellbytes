@@ -573,8 +573,7 @@ const N8NPage = () => {
               Why Choose Our Agents
             </h2>
             <p className='text-xl text-black/60 max-w-3xl mx-auto font-light'>
-              Pre-built, tested, and optimized workflow agents ready for
-              immediate deployment
+              Custom-built, tested, and optimized N8N workflow agents tailored for your business needs
             </p>
           </div>
 
