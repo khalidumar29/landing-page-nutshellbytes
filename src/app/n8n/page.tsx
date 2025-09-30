@@ -381,7 +381,7 @@ const N8NPage = () => {
                 className='inline-flex items-center gap-2 px-4 sm:px-6 py-2 bg-black/5 rounded-full text-xs sm:text-sm font-medium text-black/60 mb-8 cursor-pointer transition-all duration-300 hover:bg-black/10'
               >
                 <div className='w-1.5 h-1.5 bg-black rounded-full'></div>
-                <span>Nutshell Bytes</span>
+                <span>N8N Automation Specialists</span>
               </div>
 
               {/* Animated Heading */}
