@@ -505,7 +505,7 @@ const N8NPage = () => {
               Our Track Record
             </h2>
             <p className='text-xl text-white/70 font-light'>
-              Proven results from our workflow agents
+              Delivering measurable success with custom N8N automation solutions
             </p>
           </div>
 
