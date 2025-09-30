@@ -1,0 +1,11 @@
+<svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="appleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#333333;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="180" height="180" fill="url(#appleGrad)" rx="30"/>
+  <text x="90" y="110" text-anchor="middle" fill="white" font-family="system-ui" font-size="48" font-weight="900">NB</text>
+  <text x="90" y="135" text-anchor="middle" fill="#cccccc" font-family="system-ui" font-size="12" font-weight="600">NUTSHELL BYTES</text>
+</svg>

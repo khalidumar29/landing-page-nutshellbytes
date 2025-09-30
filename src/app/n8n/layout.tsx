@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/n8n-automation-preview.jpg",
+        url: "/n8n-automation-preview.svg",
         width: 1200,
         height: 630,
         alt: "N8N Automation Workflow Agents by Nutshell Bytes",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "N8N Automation Specialists | Custom Workflow Agents",
     description:
       "Expert N8N automation solutions that deliver 300% ROI. Custom workflow agents for e-commerce, lead generation, support, and more.",
-    images: ["/n8n-automation-preview.jpg"],
+    images: ["/n8n-automation-preview.svg"],
     creator: "@nutshellbytes",
   },
   alternates: {

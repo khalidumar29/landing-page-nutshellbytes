@@ -1,0 +1,28 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Modern gradient background -->
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#logoGrad)" rx="80"/>
+  
+  <!-- Company initials with modern design -->
+  <text x="200" y="180" text-anchor="middle" fill="white" font-family="system-ui, -apple-system, sans-serif" font-size="120" font-weight="900" letter-spacing="-0.05em">NB</text>
+  
+  <!-- Company name -->
+  <text x="200" y="240" text-anchor="middle" fill="white" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="600" letter-spacing="0.1em">NUTSHELL</text>
+  <text x="200" y="270" text-anchor="middle" fill="#cccccc" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="600" letter-spacing="0.1em">BYTES</text>
+  
+  <!-- Modern accent line -->
+  <line x1="120" y1="300" x2="280" y2="300" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Tech dots -->
+  <circle cx="140" cy="320" r="3" fill="white"/>
+  <circle cx="160" cy="320" r="3" fill="white"/>
+  <circle cx="180" cy="320" r="3" fill="white"/>
+  <circle cx="220" cy="320" r="3" fill="white"/>
+  <circle cx="240" cy="320" r="3" fill="white"/>
+  <circle cx="260" cy="320" r="3" fill="white"/>
+</svg>
