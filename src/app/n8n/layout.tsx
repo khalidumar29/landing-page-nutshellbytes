@@ -4,7 +4,8 @@ export const metadata: Metadata = {
   title: "N8N Automation Specialists | Custom Workflow Agents | Nutshell Bytes",
   description:
     "Transform your business with custom N8N workflow agents. We create intelligent automation solutions that save 95% of manual work time. Expert N8N developers delivering proven results across 15+ industries.",
-  keywords: "N8N automation, workflow agents, business automation, N8N specialists, custom workflows, process automation, N8N developers, automation consultants, workflow optimization, business process automation, N8N integration services, automated workflows, enterprise automation, digital transformation",
+  keywords:
+    "N8N automation, workflow agents, business automation, N8N specialists, custom workflows, process automation, N8N developers, automation consultants, workflow optimization, business process automation, N8N integration services, automated workflows, enterprise automation, digital transformation",
   authors: [{ name: "Nutshell Bytes N8N Team" }],
   robots: {
     index: true,
@@ -30,8 +31,8 @@ export const metadata: Metadata = {
         url: "/n8n-automation-preview.jpg",
         width: 1200,
         height: 630,
-        alt: "N8N Automation Workflow Agents by Nutshell Bytes"
-      }
+        alt: "N8N Automation Workflow Agents by Nutshell Bytes",
+      },
     ],
   },
   twitter: {
@@ -47,79 +48,78 @@ export const metadata: Metadata = {
   },
 };
 
-export default function N8NLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function N8NLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
       {/* N8N Specific Structured Data */}
       <script
-        type="application/ld+json"
+        type='application/ld+json'
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            name: "Nutshell Bytes N8N Specialists", 
+            name: "Nutshell Bytes N8N Specialists",
             alternateName: "N8N Automation Experts",
             url: "https://n8n.nutshellbytes.com",
             logo: "https://nutshellbytes.com/logo.png",
-            description: "Expert N8N automation specialists creating custom workflow agents that deliver measurable business results",
+            description:
+              "Expert N8N automation specialists creating custom workflow agents that deliver measurable business results",
             foundingDate: "2020",
             contactPoint: {
               "@type": "ContactPoint",
               telephone: "+1-555-0123",
               contactType: "customer service",
               email: "team@nutshellbytes.com",
-              availableLanguage: "en"
+              availableLanguage: "en",
             },
             address: {
-              "@type": "PostalAddress", 
+              "@type": "PostalAddress",
               addressLocality: "Global",
               addressRegion: "Worldwide",
-              addressCountry: "International"
+              addressCountry: "International",
             },
             sameAs: [
               "https://nutshellbytes.com",
               "https://linkedin.com/company/nutshellbytes",
-              "https://twitter.com/nutshellbytes"
+              "https://twitter.com/nutshellbytes",
             ],
             offers: {
               "@type": "Offer",
               itemOffered: {
                 "@type": "Service",
                 name: "N8N Workflow Agent Development",
-                description: "Custom N8N automation solutions and workflow agents",
+                description:
+                  "Custom N8N automation solutions and workflow agents",
                 provider: {
                   "@type": "Organization",
-                  name: "Nutshell Bytes"
-                }
-              }
+                  name: "Nutshell Bytes",
+                },
+              },
             },
             aggregateRating: {
               "@type": "AggregateRating",
               ratingValue: "4.9",
-              reviewCount: "50", 
-              bestRating: "5"
-            }
-          })
+              reviewCount: "50",
+              bestRating: "5",
+            },
+          }),
         }}
       />
-      
+
       {/* Service Structured Data */}
       <script
-        type="application/ld+json"
+        type='application/ld+json'
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
             name: "N8N Workflow Automation Services",
-            description: "Professional N8N automation and workflow agent development services",
+            description:
+              "Professional N8N automation and workflow agent development services",
             provider: {
               "@type": "Organization",
               name: "Nutshell Bytes",
-              url: "https://nutshellbytes.com"
+              url: "https://nutshellbytes.com",
             },
             areaServed: "Worldwide",
             hasOfferCatalog: {
@@ -130,26 +130,26 @@ export default function N8NLayout({
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "E-commerce Order Automation Agent"
-                  }
+                    name: "E-commerce Order Automation Agent",
+                  },
                 },
                 {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "Lead Generation Automation Agent"
-                  }
+                    name: "Lead Generation Automation Agent",
+                  },
                 },
                 {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "Customer Support Automation Agent"
-                  }
-                }
-              ]
-            }
-          })
+                    name: "Customer Support Automation Agent",
+                  },
+                },
+              ],
+            },
+          }),
         }}
       />
       {children}

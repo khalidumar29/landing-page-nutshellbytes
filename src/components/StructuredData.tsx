@@ -6,9 +6,9 @@ interface StructuredDataProps {
 export default function StructuredData({ data }: StructuredDataProps) {
   return (
     <script
-      type="application/ld+json"
+      type='application/ld+json'
       dangerouslySetInnerHTML={{
-        __html: JSON.stringify(data)
+        __html: JSON.stringify(data),
       }}
     />
   );
@@ -31,30 +31,34 @@ export const serviceSchema = (serviceName: string, description: string) => ({
   provider: {
     "@type": "Organization",
     name: "Nutshell Bytes",
-    url: "https://nutshellbytes.com"
-  }
+    url: "https://nutshellbytes.com",
+  },
 });
 
-export const faqSchema = (faqs: Array<{ question: string; answer: string }>) => ({
+export const faqSchema = (
+  faqs: Array<{ question: string; answer: string }>
+) => ({
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  mainEntity: faqs.map(faq => ({
+  mainEntity: faqs.map((faq) => ({
     "@type": "Question",
     name: faq.question,
     acceptedAnswer: {
       "@type": "Answer",
-      text: faq.answer
-    }
-  }))
+      text: faq.answer,
+    },
+  })),
 });
 
-export const breadcrumbSchema = (items: Array<{ name: string; url: string }>) => ({
+export const breadcrumbSchema = (
+  items: Array<{ name: string; url: string }>
+) => ({
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: items.map((item, index) => ({
     "@type": "ListItem",
     position: index + 1,
     name: item.name,
-    item: item.url
-  }))
+    item: item.url,
+  })),
 });
